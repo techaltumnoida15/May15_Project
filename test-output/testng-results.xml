@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15617" started-at="2021-05-15T15:50:48 IST" finished-at="2021-05-15T15:51:04 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15617" started-at="2021-05-15T15:50:48 IST" finished-at="2021-05-15T15:51:04 IST">
+      <class name="flipkart_may15.SearchItems">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:flipkart_may15.SearchItems@5faeada1]" name="openBrowser" is-config="true" duration-ms="7748" started-at="2021-05-15T15:50:48 IST" finished-at="2021-05-15T15:50:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testSearchItems()[pri:0, instance:flipkart_may15.SearchItems@5faeada1]" name="testSearchItems" duration-ms="6575" started-at="2021-05-15T15:50:56 IST" finished-at="2021-05-15T15:51:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchItems -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:flipkart_may15.SearchItems@5faeada1]" name="quitBrowser" is-config="true" duration-ms="1241" started-at="2021-05-15T15:51:02 IST" finished-at="2021-05-15T15:51:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- flipkart_may15.SearchItems -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
