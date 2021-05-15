@@ -1,6 +1,7 @@
 package flipkart_may15;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -44,11 +45,20 @@ public class SearchItems extends BaseTest{
 		Thread.sleep(3000);
 		
 		//count no. of items available
-		String totalItems = driver.findElement(By.xpath("//span[@class='_10Ermr']")).getText();
+		WebElement totalItems = driver.findElement(By.xpath("//span[@class='_10Ermr']"));
+		//String totalItems = driver.findElement(By.xpath("//span[@class='_10Ermr']")).getText();
+		totalItems.getText();
 		System.out.println(totalItems);
 		
 	}
-	
-	
-	
 }
+
+
+
+
+
+
+
+
+
+

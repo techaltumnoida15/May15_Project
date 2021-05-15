@@ -1,0 +1,57 @@
+Relative xpath
+
+<HTML-TAG    att = value     att2 = val2   > TEXT  </HTML-TAG>
+
+1.
+//HTML-TAG[@att='val']
+
+//HTML-TAG[@*='val']
+
+//*[@att='val']
+
+//*[contains(@type,'sub')] 
+
+//input[@class='_2IX_2- VJZDxU']
+
+//input[@*='_2IX_2- VJZDxU']
+
+//*[@class='_2IX_2- VJZDxU']
+
+//button[@class='_2KpZ6l _2HKlqd _3AWRsL']
+
+//a[@title='Search Jobs']
+
+//div[@class='mTxt']
+
+** If there are more then 1 elements of same xpath and you 
+want to navigate to other elements
+
+(//div[@class='mTxt'])[6]
+
+
+2. 
+//HTML-TAG[text()='textVal']
+
+//div[text()='Login']
+
+//div[text()='More']
+
+
+3. contains:
+class=abc678
+//HTML-TAG[contains(@class,'abc')]
+
+//input[@class='form-control pr-6']
+
+
+//input[contains(@class,'form-control pr-')]
+
+
+
+
+
+
+
+
+
+
