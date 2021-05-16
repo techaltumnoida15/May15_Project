@@ -10,7 +10,7 @@ public class SearchItems extends BaseTest{
 
 	@Test
 	public void testSearchItems() throws Exception {
-		
+		driver.get("http://www.flipkart.com");
 		//Wait 
 		Thread.sleep(3000);
 		
