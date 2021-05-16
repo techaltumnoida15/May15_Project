@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="flipkart_may15.SearchItems">
+      <class name="flipkart_may15.FaceBook_NewAccountTest">
         <methods>
-          <include name="testSearchItems"/>
+          <include name="facebookNewAccountTest"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- flipkart_may15.SearchItems -->
+      </class> <!-- flipkart_may15.FaceBook_NewAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
