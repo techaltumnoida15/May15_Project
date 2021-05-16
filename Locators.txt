@@ -46,6 +46,48 @@ class=abc678
 
 //input[contains(@class,'form-control pr-')]
 
+------------------------------------------------------
+
+To push your code 
+
+
+*** U should be in your local branch
+
+How u will know that in which branch you are
+
+git branch
+
+git branch -a
+
+To navigate to your branch
+git checkout <branchName>
+
+=============
+
+check changes
+
+git status
+
+u have to add these changes
+git add .
+
+u have to commit ur changes
+git commit "message"
+
+
+u have to push ur changes in ur local repo
+git push origin <branchName>
+
+
+If u want to get code from any branch
+** If you have changes then commit
+
+git pull origin <branchName>
+
+
+
+
+
 
 
 
