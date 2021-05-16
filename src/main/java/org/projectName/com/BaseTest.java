@@ -21,12 +21,17 @@ public class BaseTest {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get("http://www.flipkart.com");
+		driver.get("https://www.baesystems.com/en/home");
 	}
 
 	@AfterMethod
 	public void quitBrowser() {
+		
 		driver.quit();
 	}
 
 }
+  
+
+
+
