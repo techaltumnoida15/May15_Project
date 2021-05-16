@@ -2,6 +2,8 @@ package org.projectName.com;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -13,21 +15,45 @@ public class BaseTest {
 	protected WebDriver driver;
 
 	@BeforeMethod
-	public void openBrowser() {
-
-		// BrowserDriver.exe
-		WebDriverManager.chromedriver().setup();
-		// Open Browser
-		driver = new ChromeDriver();
+	public void openBrowser() throws Exception {
+		String browserName = "CHROME";
+		
+		if(browserName.equalsIgnoreCase("chrome")) {
+			//Open Chrome
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}
+		else if(browserName.equalsIgnoreCase("firefox")) {
+			//Open FF
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		else if(browserName.equalsIgnoreCase("ie")) {
+			//Open IE
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver();
+		}
+		else {
+			throw new Exception("This browser is not mention.");
+		}
+		
 		driver.manage().window().maximize();
 
+<<<<<<< HEAD
 		driver.get("https://www.baesystems.com/en/home");
+=======
+		//driver.get("http://www.flipkart.com");
+>>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
 	}
 
 	@AfterMethod
 	public void quitBrowser() {
+<<<<<<< HEAD
 		
 		driver.quit();
+=======
+		//driver.quit();
+>>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
 	}
 
 }
