@@ -18,8 +18,7 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		//Click on New Account
 		WebElement createAccount = driver.findElement(By.xpath("(//div[@class='_6ltg'])[2]/a"));//u_0_2_X0
 		Assert.assertTrue(createAccount.isEnabled(), "Create account button is not enable");
-		System.out.println("Create account button is enable");
-		
+		System.out.println("Create account button is enable");		
 		//driver.findElement(By.id("u_0_2_fS")).click();
 		createAccount.click();
 		System.out.println("Click on Create New Account");

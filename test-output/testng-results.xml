@@ -2,41 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-05-15T17:36:59 IST" name="Default suite" finished-at="2021-05-15T17:37:18 IST" duration-ms="19571">
+  <suite started-at="2021-05-18T13:07:51 IST" name="Default suite" finished-at="2021-05-18T13:08:03 IST" duration-ms="11873">
     <groups>
     </groups>
-    <test started-at="2021-05-15T17:36:59 IST" name="Default test" finished-at="2021-05-15T17:37:18 IST" duration-ms="19571">
-      <class name="flipkart_may15.SearchItems">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.SearchItems@48974e45]" started-at="2021-05-15T17:36:59 IST" name="openBrowser" finished-at="2021-05-15T17:37:10 IST" duration-ms="11564" status="PASS">
+    <test started-at="2021-05-18T13:07:51 IST" name="Default test" finished-at="2021-05-18T13:08:03 IST" duration-ms="11873">
+      <class name="flipkart_may15.COA_RadioButton">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.COA_RadioButton@48974e45]" started-at="2021-05-18T13:07:51 IST" name="openBrowser" finished-at="2021-05-18T13:07:54 IST" duration-ms="3042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="testSearchItems()[pri:0, instance:flipkart_may15.SearchItems@48974e45]" started-at="2021-05-15T17:37:10 IST" name="testSearchItems" finished-at="2021-05-15T17:37:17 IST" duration-ms="6641" status="PASS">
+        <test-method signature="coaTestRadioButton()[pri:0, instance:flipkart_may15.COA_RadioButton@48974e45]" started-at="2021-05-18T13:07:54 IST" name="coaTestRadioButton" finished-at="2021-05-18T13:08:01 IST" duration-ms="7367" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchItems -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.SearchItems@48974e45]" started-at="2021-05-15T17:37:17 IST" name="quitBrowser" finished-at="2021-05-15T17:37:18 IST" duration-ms="1310" status="PASS">
-=======
-  <suite name="Default suite" duration-ms="10939" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:38 IST">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="10939" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:38 IST">
-      <class name="flipkart_may15.FaceBook_NewAccountTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3908" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="facebookNewAccountTest()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="facebookNewAccountTest" duration-ms="6939" started-at="2021-05-16T16:57:31 IST" finished-at="2021-05-16T16:57:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- facebookNewAccountTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-05-16T16:57:38 IST" finished-at="2021-05-16T16:57:38 IST">
->>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
+        </test-method> <!-- coaTestRadioButton -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.COA_RadioButton@48974e45]" started-at="2021-05-18T13:08:01 IST" name="quitBrowser" finished-at="2021-05-18T13:08:03 IST" duration-ms="1409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- flipkart_may15.FaceBook_NewAccountTest -->
+      </class> <!-- flipkart_may15.COA_RadioButton -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

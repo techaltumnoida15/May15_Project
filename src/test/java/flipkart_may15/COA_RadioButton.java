@@ -12,6 +12,7 @@ public class COA_RadioButton extends BaseTest{
 	public void coaTestRadioButton() throws Exception {
 		driver.get("http://www.cheapoair.com");
 		
+		driver.getTitle();
 		Thread.sleep(4000);   //
 		
 		//Check id Round Trip is selected or not
