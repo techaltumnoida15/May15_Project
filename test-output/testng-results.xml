@@ -2,37 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-05-15T17:39:49 IST" name="Default suite" finished-at="2021-05-15T17:40:03 IST" duration-ms="13999">
+  <suite started-at="2021-05-22T13:20:29 IST" name="Default suite" finished-at="2021-05-22T13:20:35 IST" duration-ms="6681">
     <groups>
     </groups>
-    <test started-at="2021-05-15T17:39:49 IST" name="Default test" finished-at="2021-05-15T17:40:03 IST" duration-ms="13999">
-      <class name="flipkart_may15.SearchItems">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.SearchItems@223aa2f7]" started-at="2021-05-15T17:39:49 IST" name="openBrowser" finished-at="2021-05-15T17:39:55 IST" duration-ms="6199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="testSearchItems()[pri:0, instance:flipkart_may15.SearchItems@223aa2f7]" started-at="2021-05-15T17:39:55 IST" name="testSearchItems" finished-at="2021-05-15T17:40:02 IST" duration-ms="6677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchItems -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.SearchItems@223aa2f7]" started-at="2021-05-15T17:40:02 IST" name="quitBrowser" finished-at="2021-05-15T17:40:03 IST" duration-ms="1085" status="PASS">
-=======
-  <suite name="Default suite" duration-ms="10939" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:38 IST">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="10939" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:38 IST">
+    <test started-at="2021-05-22T13:20:29 IST" name="Default test" finished-at="2021-05-22T13:20:35 IST" duration-ms="6681">
       <class name="flipkart_may15.FaceBook_NewAccountTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3908" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:31 IST">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@223aa2f7]" started-at="2021-05-22T13:20:29 IST" name="openBrowser" finished-at="2021-05-22T13:20:31 IST" duration-ms="2124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="facebookNewAccountTest()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="facebookNewAccountTest" duration-ms="6939" started-at="2021-05-16T16:57:31 IST" finished-at="2021-05-16T16:57:38 IST">
+        <test-method signature="facebookNewAccountTest()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@223aa2f7]" started-at="2021-05-22T13:20:31 IST" name="facebookNewAccountTest" finished-at="2021-05-22T13:20:35 IST" duration-ms="4517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- facebookNewAccountTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-05-16T16:57:38 IST" finished-at="2021-05-16T16:57:38 IST">
->>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@223aa2f7]" started-at="2021-05-22T13:20:35 IST" name="quitBrowser" finished-at="2021-05-22T13:20:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

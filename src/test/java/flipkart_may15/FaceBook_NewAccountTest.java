@@ -63,6 +63,16 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		//Assignment
 		//Select Gender
 		
+		//driver.findElement(By.xpath("//label[@class=\"_58mt\"][1]")).click();
+		//driver.findElement(By.xpath("//input[@value=\"1\"]")).click();
+		
+		
+		  WebElement radioElement= driver.findElement(By.xpath("//input[@value=\"2\"]")); 
+		  //boolean selectState = radioElement.isEnabled();
+		  radioElement.click();
+		 
+		  
+		 
 		
 		//Verify that desired gender is selected
 		
