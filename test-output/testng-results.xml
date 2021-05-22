@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10939" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:38 IST">
+  <suite name="Default suite" duration-ms="9684" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:58 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10939" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:38 IST">
-      <class name="flipkart_may15.FaceBook_NewAccountTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3908" started-at="2021-05-16T16:57:27 IST" finished-at="2021-05-16T16:57:31 IST">
+    <test name="Default test" duration-ms="9684" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:58 IST">
+      <class name="may22.UseKeyBoardTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3577" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="facebookNewAccountTest()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="facebookNewAccountTest" duration-ms="6939" started-at="2021-05-16T16:57:31 IST" finished-at="2021-05-16T16:57:38 IST">
+        <test-method status="PASS" signature="keyboardTest()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="keyboardTest" duration-ms="6011" started-at="2021-05-22T16:28:52 IST" finished-at="2021-05-22T16:28:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebookNewAccountTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-05-16T16:57:38 IST" finished-at="2021-05-16T16:57:38 IST">
+        </test-method> <!-- keyboardTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2021-05-22T16:28:58 IST" finished-at="2021-05-22T16:28:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- flipkart_may15.FaceBook_NewAccountTest -->
+      </class> <!-- may22.UseKeyBoardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
