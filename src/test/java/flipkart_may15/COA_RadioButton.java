@@ -22,6 +22,11 @@ public class COA_RadioButton extends BaseTest{
 		Assert.assertTrue(!driver.findElement(By.id("onewayTrip")).isSelected(), "OneWay trip is selected.");
 		System.out.println("OneWay trip is not selected.");
 		
+		
+		
+		WebElement Oneway = driver.findElement(By.xpath(".//input[@value='ONEWAYTRIP']"));
+		Oneway.click();
+		
 		/*
 		 * WebElement oneWay = driver.findElement(By.id("onewayTrip")); Boolean
 		 * isOneWaySelected = oneWay.isSelected();
