@@ -3,23 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="baesystems11g.RFSearchTest">
-        <methods>
-=======
       <class name="flipkart_may15.FaceBook_NewAccountTest">
         <methods>
           <include name="facebookNewAccountTest"/>
->>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
           <include name="openBrowser"/>
-          <include name="performsearch"/>
           <include name="quitBrowser"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- baesystems11g.RFSearchTest -->
-=======
       </class> <!-- flipkart_may15.FaceBook_NewAccountTest -->
->>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

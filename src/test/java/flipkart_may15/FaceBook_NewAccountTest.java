@@ -1,5 +1,7 @@
 package flipkart_may15;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -61,7 +63,21 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		
 		
 		//Assignment
+		
 		//Select Gender
+		WebElement genderselectElement= driver.findElement(By.xpath("//div[@class=\'_58mt\']"));
+		
+		Assert.assertTrue(genderselectElement.isSelected(), "Gender is not selcected");
+		
+		System.out.println("Gender is selected");
+		
+		genderselectElement.click();
+		
+		System.out.println("Female is the gender selected");
+		
+
+	
+		
 		
 		
 		//Verify that desired gender is selected

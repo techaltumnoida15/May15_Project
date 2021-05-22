@@ -39,21 +39,16 @@ public class BaseTest {
 		
 		driver.manage().window().maximize();
 
-<<<<<<< HEAD
-		driver.get("https://www.baesystems.com/en/home");
-=======
-		//driver.get("http://www.flipkart.com");
->>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
+
+		driver.get("https://www.facebook.com/login.php");
+
 	}
 
 	@AfterMethod
 	public void quitBrowser() {
-<<<<<<< HEAD
 		
-		driver.quit();
-=======
 		//driver.quit();
->>>>>>> dcb175cb36e894fcb7a41bdd638ca5d2d0966565
+		//driver.quit();
 	}
 
 }
