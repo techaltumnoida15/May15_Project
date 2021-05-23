@@ -46,7 +46,7 @@ public class BaseTest {
 	@AfterMethod
 	public void quitBrowser() {
 		System.out.println("window close");
-		driver.quit();
+		//driver.quit();
 	}
 
 }
