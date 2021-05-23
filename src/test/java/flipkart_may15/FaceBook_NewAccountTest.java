@@ -60,13 +60,20 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		
 		
 		//Assignment
-		//Select Gender
+		//Select Gender - Male
+		WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='2']"));
+		maleRadioButton.click();
 		
+		/*
+		 * //Verify that desired gender is selected boolean isMaleRadioSelected =
+		 * maleRadioButton.isSelected();
+		 * 
+		 * if(isMaleRadioSelected) { System.out.println("Male has been selected"); }
+		 * else { System.out.println("Male is not selected."); }
+		 */
 		
-		//Verify that desired gender is selected
-		
-		
-		
+		Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
+		System.out.println("Male has been selected");
 	}
 }
 

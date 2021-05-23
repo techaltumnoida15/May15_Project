@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-22T15:45:41 IST" name="Default suite" finished-at="2021-05-22T15:45:57 IST" duration-ms="15165">
+  <suite started-at="2021-05-23T15:29:02 IST" name="Default suite" finished-at="2021-05-23T15:29:23 IST" duration-ms="20769">
     <groups>
     </groups>
-    <test started-at="2021-05-22T15:45:41 IST" name="Default test" finished-at="2021-05-22T15:45:57 IST" duration-ms="15165">
+    <test started-at="2021-05-23T15:29:02 IST" name="Default test" finished-at="2021-05-23T15:29:23 IST" duration-ms="20769">
       <class name="flipkart_may15.COA_RadioButton">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.COA_RadioButton@48974e45]" started-at="2021-05-22T15:45:41 IST" name="openBrowser" finished-at="2021-05-22T15:45:45 IST" duration-ms="3465" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.COA_RadioButton@20f5239f]" started-at="2021-05-23T15:29:03 IST" name="openBrowser" finished-at="2021-05-23T15:29:13 IST" duration-ms="10147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="coaTestRadioButton()[pri:0, instance:flipkart_may15.COA_RadioButton@48974e45]" started-at="2021-05-22T15:45:45 IST" name="coaTestRadioButton" finished-at="2021-05-22T15:45:55 IST" duration-ms="10075" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="coaTestRadioButton()[pri:0, instance:flipkart_may15.COA_RadioButton@20f5239f]" started-at="2021-05-23T15:29:13 IST" name="coaTestRadioButton" finished-at="2021-05-23T15:29:21 IST" duration-ms="8762" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[element click intercepted: Element <input type="radio" id="onewayTrip" name="tripType" readonly="" class="custom-control-input" value="ONEWAYTRIP"> is not clickable at point (222, 319). Other element would receive the click: <label class="custom-control-label" for="onewayTrip">...</label>
+              <![CDATA[no such window: window was already closed
   (Session info: chrome=90.0.4430.212)
 Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'CTNL1320', ip: '192.168.29.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'CTNL1320', ip: '192.168.43.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAHIL~1.MIT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e031d21e57e90517210bb35df3f4b8c9]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAHIL~1.MIT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3da7a768e9d74f96982c949a66507a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="radio" id="onewayTrip" name="tripType" readonly="" class="custom-control-input" value="ONEWAYTRIP"> is not clickable at point (222, 319). Other element would receive the click: <label class="custom-control-label" for="onewayTrip">...</label>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
   (Session info: chrome=90.0.4430.212)
 Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'CTNL1320', ip: '192.168.29.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'CTNL1320', ip: '192.168.43.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAHIL~1.MIT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e031d21e57e90517210bb35df3f4b8c9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAHIL~1.MIT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3da7a768e9d74f96982c949a66507a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,9 +41,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at flipkart_may15.COA_RadioButton.coaTestRadioButton(COA_RadioButton.java:28)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+at flipkart_may15.COA_RadioButton.coaTestRadioButton(COA_RadioButton.java:16)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,11 +74,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- coaTestRadioButton -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.COA_RadioButton@48974e45]" started-at="2021-05-22T15:45:55 IST" name="quitBrowser" finished-at="2021-05-22T15:45:57 IST" duration-ms="1563" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.COA_RadioButton@20f5239f]" started-at="2021-05-23T15:29:21 IST" name="quitBrowser" finished-at="2021-05-23T15:29:23 IST" duration-ms="1754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
