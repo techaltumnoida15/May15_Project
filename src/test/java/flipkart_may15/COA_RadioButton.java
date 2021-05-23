@@ -16,6 +16,8 @@ public class COA_RadioButton extends BaseTest{
 		driver.getTitle();
 		Thread.sleep(4000);   //
 		
+		//driver.
+		
 		//Check id Round Trip is selected or not
 		Assert.assertTrue(driver.findElement(By.id("roundTrip")).isSelected(), "Round trip is not selected.");
 		System.out.println("Round trip is selected.");
