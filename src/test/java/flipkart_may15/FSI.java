@@ -13,7 +13,7 @@ public class FSI extends BaseTest{
 		// navigate to FSI portal
 		driver.get("https://portal.dreamscapetest.com/TestAutomationCodeMerge/Account/Login/");
 		// wait for some time
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		//check the existence of UserName field
 		WebElement UserNameTextBox = driver.findElement(By.id("UserName"));
