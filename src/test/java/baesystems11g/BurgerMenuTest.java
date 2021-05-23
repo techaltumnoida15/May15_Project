@@ -1,5 +1,12 @@
 package baesystems11g;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import java.awt.Checkbox;
+
+import javax.print.attribute.standard.Destination;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,7 +36,7 @@ public class BurgerMenuTest extends BaseTest {
 		objActions.build().perform();
 		
 		
-		//Click to the first level navigation 'Our Company
+		//Find the first level navigation item 'Our Company
 		
 		WebElement ourCompany = driver.findElement(By.xpath("//span[text()='Our Company']"));
 		
@@ -42,9 +49,24 @@ public class BurgerMenuTest extends BaseTest {
 		
 		objActions2.build().perform();
 		
+		System.out.println("first level item - Our Company is traceable");
+		
 		//Click on the 'Our Company' link
 		
 		ourCompany.click();
+		
+		System.out.println("You are on destination URL -Our company page");
+		
+		//fetch and print the Destination page URL
+		
+		String DestinationURL = driver.getCurrentUrl();
+		
+		System.out.println(DestinationURL);
+		
+		driver.navigate().back();
+		
+	//assert.assertTrue((driver.get(ourCompany), Destination is incorrect);
+		
 		
 		
 		
