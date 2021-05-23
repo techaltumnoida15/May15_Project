@@ -38,6 +38,7 @@ public class BaseTest {
 		}
 		
 		driver.manage().window().maximize();
+		System.out.println("window maximized");
 
 
 		//driver.get("https://www.facebook.com/login.php");
@@ -46,9 +47,14 @@ public class BaseTest {
 
 	@AfterMethod
 	public void quitBrowser() {
+<<<<<<< HEAD
 		
 		//driver.quit();
 		//driver.quit();
+=======
+		System.out.println("window close");
+		driver.quit();
+>>>>>>> 1e043ad2858173b1622b234181da9e1e4a6cf63b
 	}
 
 }

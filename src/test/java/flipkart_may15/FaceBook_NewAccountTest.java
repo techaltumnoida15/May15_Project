@@ -21,8 +21,7 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		//Click on New Account
 		WebElement createAccount = driver.findElement(By.xpath("(//div[@class='_6ltg'])[2]/a"));//u_0_2_X0
 		Assert.assertTrue(createAccount.isEnabled(), "Create account button is not enable");
-		System.out.println("Create account button is enable");
-		
+		System.out.println("Create account button is enable");		
 		//driver.findElement(By.id("u_0_2_fS")).click();
 		createAccount.click();
 		System.out.println("Click on Create New Account");
@@ -63,6 +62,7 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		selectYear.selectByVisibleText("1905");
 		
 		
+<<<<<<< HEAD
 		//Assignment (Done)
 		
 		//Select Gender - using the HTML class 
@@ -104,8 +104,23 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		
 		
 		
+=======
+		//Assignment
+		//Select Gender - Male
+		WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='2']"));
+		maleRadioButton.click();
+>>>>>>> 1e043ad2858173b1622b234181da9e1e4a6cf63b
 		
+		/*
+		 * //Verify that desired gender is selected boolean isMaleRadioSelected =
+		 * maleRadioButton.isSelected();
+		 * 
+		 * if(isMaleRadioSelected) { System.out.println("Male has been selected"); }
+		 * else { System.out.println("Male is not selected."); }
+		 */
 		
+		Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
+		System.out.println("Male has been selected");
 	}
 }
 
