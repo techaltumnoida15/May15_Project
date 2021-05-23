@@ -1,5 +1,7 @@
 package flipkart_may15;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
@@ -19,6 +21,8 @@ public class COA_RadioButton extends BaseTest{
 		//driver.
 		
 		//Check id Round Trip is selected or not
+		
+		
 		Assert.assertTrue(driver.findElement(By.id("roundTrip")).isSelected(), "Round trip is not selected.");
 		System.out.println("Round trip is selected.");
 		
