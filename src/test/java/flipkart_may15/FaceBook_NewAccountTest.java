@@ -57,6 +57,7 @@ public class FaceBook_NewAccountTest extends BaseTest {
 		WebElement yearDropdown = driver.findElement(By.id("year"));
 		Select selectYear = new Select(yearDropdown);
 		selectYear.selectByVisibleText("1905");
+<<<<<<< HEAD
 
 		// Assignment
 		// Select Gender
@@ -70,5 +71,24 @@ public class FaceBook_NewAccountTest extends BaseTest {
 
 		// Verify that desired gender is selected
 
+=======
+		
+		
+		//Assignment
+		//Select Gender - Male
+		WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='2']"));
+		maleRadioButton.click();
+		
+		/*
+		 * //Verify that desired gender is selected boolean isMaleRadioSelected =
+		 * maleRadioButton.isSelected();
+		 * 
+		 * if(isMaleRadioSelected) { System.out.println("Male has been selected"); }
+		 * else { System.out.println("Male is not selected."); }
+		 */
+		
+		Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
+		System.out.println("Male has been selected");
+>>>>>>> 82f6b1eb4d75d22b9370b844a622c6b22af9cbbd
 	}
 }
