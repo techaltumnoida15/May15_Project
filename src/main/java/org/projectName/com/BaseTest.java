@@ -40,7 +40,7 @@ public class BaseTest {
 		driver.manage().window().maximize();
 
 
-		driver.get("https://www.facebook.com/login.php");
+		//driver.get("https://www.facebook.com/login.php");
 
 	}
 

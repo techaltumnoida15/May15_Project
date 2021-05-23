@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.projectName.com.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.CustomAttribute;
 import org.testng.annotations.Test;
 
 public class FaceBook_NewAccountTest extends BaseTest{
@@ -62,25 +63,46 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		selectYear.selectByVisibleText("1905");
 		
 		
-		//Assignment
+		//Assignment (Done)
 		
-		//Select Gender
-		WebElement genderselectElement= driver.findElement(By.xpath("//div[@class=\'_58mt\']"));
+		//Select Gender - using the HTML class 
 		
-		Assert.assertTrue(genderselectElement.isSelected(), "Gender is not selcected");
-		
-		System.out.println("Gender is selected");
-		
-		genderselectElement.click();
-		
-		System.out.println("Female is the gender selected");
-		
-
-	
-		
-		
+		WebElement femaleRadioButton = driver.findElement(By.xpath("(//input[@class='_8esa'])[1]"));
+		femaleRadioButton.click();
 		
 		//Verify that desired gender is selected
+		assertTrue(femaleRadioButton.isSelected(), "Female is not selected");
+		System.out.println("Female is selected as gender");
+		
+		//Select Custom option for Gender
+		WebElement customradiobuttonElement = driver.findElement(By.xpath("(//input[@class='_8esa'])[3]"));
+		customradiobuttonElement.click();
+		
+		//Verify that custom option is selected
+	    assertTrue(customradiobuttonElement.isSelected(), "Custom option is not selected");
+	    System.out.println("Custom option is selected");
+		  
+		
+
+		//Assignment
+		//Select Gender - Male
+		//WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='2']"));
+		//maleRadioButton.click();
+		
+		/*
+		 * //Verify that desired gender is selected boolean isMaleRadioSelected =
+		 * maleRadioButton.isSelected();
+		 * 
+		 * if(isMaleRadioSelected) { System.out.println("Male has been selected"); }
+		 * else { System.out.println("Male is not selected."); }
+		 */
+		
+		//Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
+		//System.out.println("Male has been selected");
+		
+		
+		
+		
 		
 		
 		
