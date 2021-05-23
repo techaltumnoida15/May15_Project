@@ -68,8 +68,8 @@ public class FaceBook_NewAccountTest extends BaseTest{
 		
 		
 		  WebElement radioElement= driver.findElement(By.xpath("//input[@value=\"2\"]")); 
-		  //boolean selectState = radioElement.isEnabled();
 		  radioElement.click();
+		//boolean selectState = radioElement.isEnabled();
 		 
 		  
 		 

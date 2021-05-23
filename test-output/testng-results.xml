@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-05-22T13:20:29 IST" name="Default suite" finished-at="2021-05-22T13:20:35 IST" duration-ms="6681">
     <groups>
     </groups>
@@ -16,10 +17,26 @@
           </reporter-output>
         </test-method> <!-- facebookNewAccountTest -->
         <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@223aa2f7]" started-at="2021-05-22T13:20:35 IST" name="quitBrowser" finished-at="2021-05-22T13:20:35 IST" duration-ms="1" status="PASS">
+=======
+  <suite name="Default suite" duration-ms="9684" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:58 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9684" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:58 IST">
+      <class name="may22.UseKeyBoardTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3577" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="keyboardTest()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="keyboardTest" duration-ms="6011" started-at="2021-05-22T16:28:52 IST" finished-at="2021-05-22T16:28:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keyboardTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2021-05-22T16:28:58 IST" finished-at="2021-05-22T16:28:58 IST">
+>>>>>>> 82f6b1eb4d75d22b9370b844a622c6b22af9cbbd
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- flipkart_may15.FaceBook_NewAccountTest -->
+      </class> <!-- may22.UseKeyBoardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

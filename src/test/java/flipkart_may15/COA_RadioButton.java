@@ -28,5 +28,9 @@ public class COA_RadioButton extends BaseTest{
 		 * if(isOneWaySelected) { System.out.println("One way is selected."); } else {
 		 * System.out.println("One way is not selected."); }
 		 */
+		
+		//driver.findElement(By.xpath("//a[@data-url-id=\"alternate_en_uk\"]"));
+		
+		//driver.findElement(By.xpath("//a[@data-url-id='alternate_en_uk']"));
 	}
 }
