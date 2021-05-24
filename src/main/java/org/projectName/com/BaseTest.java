@@ -38,12 +38,14 @@ public class BaseTest {
 		}
 		
 		driver.manage().window().maximize();
+		System.out.println("window maximized");
 
 		//driver.get("http://www.flipkart.com");
 	}
 
 	@AfterMethod
 	public void quitBrowser() {
+		System.out.println("window close");
 		//driver.quit();
 	}
 

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="flipkart_may15.FaceBook_NewAccountTest">
+      <class name="flipkart_may15.COA_RadioButton">
         <methods>
-          <include name="facebookNewAccountTest"/>
+          <include name="coaTestRadioButton"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- flipkart_may15.FaceBook_NewAccountTest -->
+      </class> <!-- flipkart_may15.COA_RadioButton -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

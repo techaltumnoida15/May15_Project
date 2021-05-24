@@ -3,6 +3,7 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2021-05-22T15:53:23 IST" name="Default suite" finished-at="2021-05-22T15:53:34 IST" duration-ms="11146">
     <groups>
     </groups>
@@ -19,24 +20,32 @@
         <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.FaceBook_NewAccountTest@a2431d0]" started-at="2021-05-22T15:53:34 IST" name="quitBrowser" finished-at="2021-05-22T15:53:34 IST" duration-ms="1" status="PASS">
 =======
   <suite name="Default suite" duration-ms="9684" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:58 IST">
+=======
+  <suite name="Default suite" duration-ms="9896" started-at="2021-05-23T17:21:26 IST" finished-at="2021-05-23T17:21:36 IST">
+>>>>>>> 84580fabd37fac21de8fde9d5c26afbb07bdfbae
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9684" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:58 IST">
-      <class name="may22.UseKeyBoardTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3577" started-at="2021-05-22T16:28:48 IST" finished-at="2021-05-22T16:28:52 IST">
+    <test name="Default test" duration-ms="9896" started-at="2021-05-23T17:21:26 IST" finished-at="2021-05-23T17:21:36 IST">
+      <class name="may23.HandleAjaxListTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:may23.HandleAjaxListTest@5faeada1]" name="openBrowser" is-config="true" duration-ms="3788" started-at="2021-05-23T17:21:26 IST" finished-at="2021-05-23T17:21:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="keyboardTest()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="keyboardTest" duration-ms="6011" started-at="2021-05-22T16:28:52 IST" finished-at="2021-05-22T16:28:58 IST">
+        <test-method status="PASS" signature="handleAjaxList()[pri:0, instance:may23.HandleAjaxListTest@5faeada1]" name="handleAjaxList" duration-ms="6027" started-at="2021-05-23T17:21:30 IST" finished-at="2021-05-23T17:21:36 IST">
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- keyboardTest -->
         <test-method status="PASS" signature="quitBrowser()[pri:0, instance:may22.UseKeyBoardTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2021-05-22T16:28:58 IST" finished-at="2021-05-22T16:28:58 IST">
 >>>>>>> 82f6b1eb4d75d22b9370b844a622c6b22af9cbbd
+=======
+        </test-method> <!-- handleAjaxList -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:may23.HandleAjaxListTest@5faeada1]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2021-05-23T17:21:36 IST" finished-at="2021-05-23T17:21:36 IST">
+>>>>>>> 84580fabd37fac21de8fde9d5c26afbb07bdfbae
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- may22.UseKeyBoardTest -->
+      </class> <!-- may23.HandleAjaxListTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
