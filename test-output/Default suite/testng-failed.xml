@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="baesystems11g.BurgerMenuTest">
+      <class name="snapdeal_2305.SnapDeal">
         <methods>
-          <include name="burgermenulist"/>
           <include name="openBrowser"/>
+          <include name="SdLogin"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- baesystems11g.BurgerMenuTest -->
-=======
-      <class name="flipkart_may15.COA_RadioButton">
-        <methods>
-          <include name="coaTestRadioButton"/>
-          <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- flipkart_may15.COA_RadioButton -->
->>>>>>> 1e043ad2858173b1622b234181da9e1e4a6cf63b
+      </class> <!-- snapdeal_2305.SnapDeal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
