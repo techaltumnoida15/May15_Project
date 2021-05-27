@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-24T03:45:11 IST" name="Default suite" finished-at="2021-05-24T03:45:43 IST" duration-ms="31321">
+  <suite started-at="2021-05-28T00:14:13 IST" name="Default suite" finished-at="2021-05-28T00:14:31 IST" duration-ms="17569">
     <groups>
     </groups>
-    <test started-at="2021-05-24T03:45:11 IST" name="Default test" finished-at="2021-05-24T03:45:43 IST" duration-ms="31321">
-      <class name="may23.CheapOair">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:may23.CheapOair@48974e45]" started-at="2021-05-24T03:45:11 IST" name="openBrowser" finished-at="2021-05-24T03:45:15 IST" duration-ms="3735" status="PASS">
+    <test started-at="2021-05-28T00:14:13 IST" name="Default test" finished-at="2021-05-28T00:14:31 IST" duration-ms="17569">
+      <class name="may23.Snapdeel">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:may23.Snapdeel@48974e45]" started-at="2021-05-28T00:14:13 IST" name="openBrowser" finished-at="2021-05-28T00:14:16 IST" duration-ms="3040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="fromWhere()[pri:0, instance:may23.CheapOair@48974e45]" started-at="2021-05-24T03:45:15 IST" name="fromWhere" finished-at="2021-05-24T03:45:42 IST" duration-ms="26530" status="PASS">
+        <test-method signature="enterMobileNumber()[pri:0, instance:may23.Snapdeel@48974e45]" started-at="2021-05-28T00:14:16 IST" name="enterMobileNumber" finished-at="2021-05-28T00:14:30 IST" duration-ms="13646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fromWhere -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:may23.CheapOair@48974e45]" started-at="2021-05-24T03:45:42 IST" name="quitBrowser" finished-at="2021-05-24T03:45:43 IST" duration-ms="972" status="PASS">
+        </test-method> <!-- enterMobileNumber -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:may23.Snapdeel@48974e45]" started-at="2021-05-28T00:14:30 IST" name="quitBrowser" finished-at="2021-05-28T00:14:31 IST" duration-ms="830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- may23.CheapOair -->
+      </class> <!-- may23.Snapdeel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
