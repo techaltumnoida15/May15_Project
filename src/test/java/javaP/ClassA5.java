@@ -31,21 +31,22 @@ public class ClassA5 {
 		List<Integer> sortedList = list1.stream().sorted().collect(Collectors.toList());
 		System.out.println(sortedList);
 		
-		//int[] arr1 = {2, 4, 1, 6, 7, 9, 10};
+		IntStream abc = Arrays.stream(arr1);
+		IntStream sortedArray = abc.sorted();
 		
-		IntStream streamArray = Arrays.stream(arr1);
+		System.out.println(sortedArray.max().getAsInt());
 		
-		streamArray.max();
+		boolean b1 = abc.equals(sortedArray);
+		System.out.println(b1);
 		
-		//Find Max num
-		//IntStream intStream = Arrays.stream(arr1);
-		//int maxItem = intStream.max().getAsInt();
-		//System.out.println("Max item in array = " + intStream.max());
-		//System.out.println("Max item in array = " + maxItem);
+		//============================================
 		
-		//IntStream intStream = Arrays.stream(arr1);
+		//int[] arr2 = new int[4];
 		
-		//IntStream.
+		int[] arr3 = {6, 2, 4, 8, 11, 22, 33};
+		
+		IntStream s3 = Arrays.stream(arr3);
+		System.out.println(s3.max().getAsInt());
 		
 		//Code
 		
