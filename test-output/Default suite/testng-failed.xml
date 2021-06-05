@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="may23.Snapdeel">
         <methods>
           <include name="openBrowser"/>
@@ -10,6 +11,15 @@
           <include name="quitBrowser"/>
         </methods>
       </class> <!-- may23.Snapdeel -->
+=======
+      <class name="baesystems11g.MegaMenuTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="whatwedomenuitem"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- baesystems11g.MegaMenuTest -->
+>>>>>>> f9c83dc8735292b8ed2dd70fe5205be04bcf356c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
