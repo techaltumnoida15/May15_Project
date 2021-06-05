@@ -35,24 +35,47 @@ public class ClassA1 {
 		return s3;
 	}
 	
+	//Calculate Length of the given string
+	
 	public void method4() {
-		String s = "Learning Java";
-		//Calculate Length
-		// Find char at index - 4
-		System.out.println(s);
-	}
-	
-	public void method5() {
-		int t = 5;
 		
-		//Calculate factorial
+		String s = "Learning Java";
+		
+		System.out.println(s);
+		
+		System.out.println("Length of string: " +s.length());
+				
+		
+		// Find char at index - 4
+
+	}	
+	
+	//Calculate factorial using for loop -Assignment 
+	
+		
+	public void method5() {
+		
+             //find the factorial of this number
+	        int number = 5;
+	        long fact = 1;
+	        for(int i = 1; i <= number; i++)
+	        {
+	            fact = fact * i;
+	        }
+	        System.out.println("Factorial of "+number+" is: "+fact);
+	    }
+	   
+	//Calculate length of the string
+	
+	public void method6() {
+		
 	}
 	
-	
+
 	
 	public static void main(String[] args) {    //Explain main method in java
 		ClassA1 obj = new ClassA1();
-		obj.method1();
+		obj.method4();
 		
 		/*
 		ClassA1 obj1 = new ClassA1();
@@ -65,6 +88,7 @@ public class ClassA1 {
 		*/
 	}
 }
+
 
 
 /*

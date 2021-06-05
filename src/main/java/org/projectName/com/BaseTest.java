@@ -40,7 +40,9 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		System.out.println("window maximized");
 
-		//driver.get("http://www.flipkart.com");
+
+		//driver.get("https://www.facebook.com/login.php");
+
 	}
 
 	@AfterMethod
@@ -58,3 +60,7 @@ public class BaseTest {
 	}
 
 }
+  
+
+
+
