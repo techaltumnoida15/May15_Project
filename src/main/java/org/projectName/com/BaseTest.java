@@ -45,6 +45,14 @@ public class BaseTest {
 
 	@AfterMethod
 	public void quitBrowser() {
+		
+		/*
+		 * TestClassDemo obj = new TestClassDemo(); int s = obj.a;
+		 * 
+		 * obj.method1();
+		 */
+		
+		
 		System.out.println("window close");
 		//driver.quit();
 	}

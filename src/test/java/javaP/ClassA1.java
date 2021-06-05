@@ -48,6 +48,8 @@ public class ClassA1 {
 		//Calculate factorial
 	}
 	
+	
+	
 	public static void main(String[] args) {    //Explain main method in java
 		ClassA1 obj = new ClassA1();
 		obj.method1();
