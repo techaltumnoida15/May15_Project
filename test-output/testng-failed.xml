@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="baesystems11g.MegaMenuTest">
+      <class name="snapdeal_2305.SnapDeal">
         <methods>
           <include name="openBrowser"/>
-          <include name="whatwedomenuitem"/>
+          <include name="SdLogin"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- baesystems11g.MegaMenuTest -->
+      </class> <!-- snapdeal_2305.SnapDeal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
