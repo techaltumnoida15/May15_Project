@@ -52,13 +52,15 @@ public class BurgerMenuTest extends BaseTest {
 		
 		//fetch and print the Destination page URL
 		
+		
 		String DestinationURL = driver.getCurrentUrl();
-			
+		
+		
 		System.out.println(DestinationURL);
+			
 		
-		driver.navigate().back();
-		
-	//assert.assertTrue((driver.get(ourCompany), Destination is incorrect);
+		//driver.navigate().back();
+
 		
 		
 		

@@ -1,17 +1,10 @@
 package snapdeal_2305;
 
-import java.awt.Frame;
-
-import javax.swing.Popup;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
 import org.testng.annotations.Test;
-
-import net.bytebuddy.asm.Advice.Enter;
 
 /*
  * Go to snapdeal.com
