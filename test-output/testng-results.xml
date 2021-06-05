@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-27T23:51:41 IST" name="Default suite" finished-at="2021-05-27T23:52:19 IST" duration-ms="37909">
+  <suite name="Default suite" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
     <groups>
     </groups>
-    <test started-at="2021-05-27T23:51:41 IST" name="Default test" finished-at="2021-05-27T23:52:19 IST" duration-ms="37909">
-      <class name="baesystems11g.BurgerMenuTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:baesystems11g.BurgerMenuTest@48974e45]" started-at="2021-05-27T23:51:41 IST" name="openBrowser" finished-at="2021-05-27T23:51:47 IST" duration-ms="6022" status="PASS">
+    <test name="Default test" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
+      <class name="snapdeal_2305.SnapDeal">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="openBrowser" is-config="true" duration-ms="16244" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:57:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="burgermenulist()[pri:0, instance:baesystems11g.BurgerMenuTest@48974e45]" started-at="2021-05-27T23:51:47 IST" name="burgermenulist" finished-at="2021-05-27T23:52:19 IST" duration-ms="31815" status="PASS">
+        <test-method status="PASS" signature="SdLogin()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="SdLogin" duration-ms="11020" started-at="2021-06-05T16:57:55 IST" finished-at="2021-06-05T16:58:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- burgermenulist -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:baesystems11g.BurgerMenuTest@48974e45]" started-at="2021-05-27T23:52:19 IST" name="quitBrowser" finished-at="2021-05-27T23:52:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- SdLogin -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="quitBrowser" is-config="true" duration-ms="2" started-at="2021-06-05T16:58:06 IST" finished-at="2021-06-05T16:58:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- baesystems11g.BurgerMenuTest -->
+      </class> <!-- snapdeal_2305.SnapDeal -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
