@@ -34,6 +34,7 @@ public class Snapdeal extends BaseTest
 		Thread.sleep(1000);
 		WebElement login =driver.findElement(By.xpath("//*[@class='accountBtn btn rippleWhite']/a"));
 		login.click();
+		driver.switchTo().frame("loginIframe");
 		try {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//div[@id=\"login-register-modal\"]/div/div[6]"));
