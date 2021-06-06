@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
+  <suite name="Default suite" duration-ms="16156" started-at="2021-06-06T16:16:16 IST" finished-at="2021-06-06T16:16:32 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
-      <class name="snapdeal_2305.SnapDeal">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="openBrowser" is-config="true" duration-ms="16244" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:57:55 IST">
+    <test name="Default test" duration-ms="16156" started-at="2021-06-06T16:16:16 IST" finished-at="2021-06-06T16:16:32 IST">
+      <class name="flipkart_may15.SearchTest2">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:flipkart_may15.SearchTest2@7dc222ae]" name="openBrowser" is-config="true" duration-ms="3036" started-at="2021-06-06T16:16:16 IST" finished-at="2021-06-06T16:16:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="SdLogin()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="SdLogin" duration-ms="11020" started-at="2021-06-05T16:57:55 IST" finished-at="2021-06-05T16:58:06 IST">
+        <test-method status="PASS" signature="searchTest()[pri:0, instance:flipkart_may15.SearchTest2@7dc222ae]" name="searchTest" duration-ms="13093" started-at="2021-06-06T16:16:19 IST" finished-at="2021-06-06T16:16:32 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SdLogin -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="quitBrowser" is-config="true" duration-ms="2" started-at="2021-06-05T16:58:06 IST" finished-at="2021-06-05T16:58:06 IST">
+        </test-method> <!-- searchTest -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:flipkart_may15.SearchTest2@7dc222ae]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-06-06T16:16:32 IST" finished-at="2021-06-06T16:16:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- snapdeal_2305.SnapDeal -->
+      </class> <!-- flipkart_may15.SearchTest2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

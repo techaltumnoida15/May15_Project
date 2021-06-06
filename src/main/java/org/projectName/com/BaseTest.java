@@ -56,7 +56,7 @@ public class BaseTest {
 		
 		
 		System.out.println("window close");
-		driver.quit();
+		//driver.quit();
 	}
 
 }
