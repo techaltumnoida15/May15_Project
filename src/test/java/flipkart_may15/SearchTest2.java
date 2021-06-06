@@ -42,12 +42,8 @@ public class SearchTest2 extends BaseTest{
 		WebElement totalElements = driver.findElement(By.cssSelector("span[class='_10Ermr']"));
 		System.out.println(totalElements.getText());
 
-		//driver.findElement(By.cssSelector("div[class='_5THWM1'] > div:nth-child(4)")).click();
-		
-		//driver.findElement(By.cssSelector("div[class='_5THWM1']")).findElements(By.tagName("span")) 
-		
 		List<WebElement> allTabsContect = driver.findElements(By.cssSelector("div[class='_5THWM1'] > *"));
-		
+
 		//Java 8
 		//Click on Tab - 'Price -- Low to High'
 		allTabsContect.stream().forEach(y -> {
@@ -56,9 +52,9 @@ public class SearchTest2 extends BaseTest{
 		});
 
 		Thread.sleep(2000);
-		//Collect Price
+		//Collect Price in a list
 		List<Integer> priceBeforeSort = new ArrayList<>();
-		
+
 		driver.findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"))
 		.stream().map(e -> e.getText())
 		//.forEach(t -> System.out.println(t));
@@ -68,64 +64,27 @@ public class SearchTest2 extends BaseTest{
 			}
 			a = a.substring(1, a.length());	
 			priceBeforeSort.add(Integer.parseInt(a));
-			
+
 		});
-		
 		System.out.println(priceBeforeSort);
-		
+
 		List<Integer> priceAfterSort = priceBeforeSort.stream().sorted().collect(Collectors.toList());
-		
 		System.out.println(priceAfterSort);
-		
+
 		Assert.assertTrue(priceBeforeSort.equals(priceAfterSort), "List is not sorted.");
 		System.out.println("List is sorted.");
-		
-		//ascending / descending - ?
-		//arr = [639, 645, 645, 649]
-		//arr[0] < arr[1]
-		//true - A
-		
+
 		//Check if list is in ascending or descending order
-				boolean flag = false;
-				for(int i = 0; i < priceAfterSort.size() - 1; i++) {
-					if(priceAfterSort.get(i) < priceAfterSort.get(i + 1)) 
-						flag = true;
-				}
-				if(flag == true) 
-					System.out.println("List is in ascending order");
-				else 
-					System.out.println("List is in descending order");
-		
-		
-		
-		/*
-		for(int i = 0; i< allTabsContect.size(); i++) {
-			String tabText = allTabsContect.get(i).getText();
-			System.out.println("tabText = " + tabText);
-			
-			if(tabText.equalsIgnoreCase("Price -- Low to High")) {
-				allTabsContect.get(i).click();
-				break;
-			}
+		boolean flag = false;
+		for(int i = 0; i < priceAfterSort.size() - 1; i++) {
+			if(priceAfterSort.get(i) < priceAfterSort.get(i + 1)) 
+				flag = true;
 		}
-		
-		Thread.sleep(3000);
-		//Extract price of all items of 1 first page
-		List<String> allPrice = new ArrayList<>();
-		List<WebElement> allItemsPriceList = driver.findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"));
-		
-		for(int j = 0; j<allItemsPriceList.size(); j++) {
-			String s = allItemsPriceList.get(j).getText();
-			
-			String itemPrice = s.substring(1, s.length());
-			allPrice.add(itemPrice);
-		}
-		
-		System.out.println(allPrice);
-		
-		//New List<Integer>  <=    from allPrice(String)
-		
-		*/
+		if(flag == true) 
+			System.out.println("List is in ascending order");
+		else 
+			System.out.println("List is in descending order");
+
 	}
 }
 
