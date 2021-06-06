@@ -34,18 +34,10 @@ public class Snapdeal extends BaseTest
 		Thread.sleep(1000);
 		WebElement login =driver.findElement(By.xpath("//*[@class='accountBtn btn rippleWhite']/a"));
 		login.click();
+		Thread.sleep(1000);
 		driver.switchTo().frame("loginIframe");
-		try {
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//div[@id=\"login-register-modal\"]/div/div[6]"));
-		System.out.println("test112");
-		}catch(Exception e)
-		{
-			System.out.println("data not found");
-		}
-		
-		//driver.findElement(By.xpath("//div[@id=\"login-register-modal\"]/div/div[6]/form/div/input")).sendKeys("234234");
-	
+		Thread.sleep(1000);
+		driver.findElement(By.id("userName")).sendKeys("442334");
 		
 			 }
 			 
