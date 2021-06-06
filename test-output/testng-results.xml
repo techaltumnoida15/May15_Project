@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-06-06T11:45:13 IST" name="Default suite" finished-at="2021-06-06T11:45:26 IST" duration-ms="13200">
     <groups>
     </groups>
@@ -20,6 +21,26 @@
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- org.assignment.project.Snapdeal -->
+=======
+  <suite name="Default suite" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
+      <class name="snapdeal_2305.SnapDeal">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="openBrowser" is-config="true" duration-ms="16244" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:57:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="SdLogin()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="SdLogin" duration-ms="11020" started-at="2021-06-05T16:57:55 IST" finished-at="2021-06-05T16:58:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SdLogin -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:snapdeal_2305.SnapDeal@7ba18f1b]" name="quitBrowser" is-config="true" duration-ms="2" started-at="2021-06-05T16:58:06 IST" finished-at="2021-06-05T16:58:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- snapdeal_2305.SnapDeal -->
+>>>>>>> f9c83dc8735292b8ed2dd70fe5205be04bcf356c
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

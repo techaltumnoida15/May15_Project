@@ -40,13 +40,27 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		System.out.println("window maximized");
 
-		//driver.get("http://www.flipkart.com");
+
+		//driver.get("https://www.facebook.com/login.php");
+
 	}
 
 	@AfterMethod
 	public void quitBrowser() {
+		
+		/*
+		 * TestClassDemo obj = new TestClassDemo(); int s = obj.a;
+		 * 
+		 * obj.method1();
+		 */
+		
+		
 		System.out.println("window close");
-		//driver.quit();
+		driver.quit();
 	}
 
 }
+  
+
+
+

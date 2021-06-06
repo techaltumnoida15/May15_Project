@@ -22,6 +22,8 @@ public class LoginTest extends BaseTest{
 			System.out.println("Login poup is not found.");
 		}
 		
+		
+		
 		//check/verify that login button is displayed/enable
 		WebElement loginButton = driver.findElement(By.xpath("//a[text()='Login']"));
 		

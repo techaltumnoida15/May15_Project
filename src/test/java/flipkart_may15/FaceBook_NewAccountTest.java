@@ -1,10 +1,13 @@
 package flipkart_may15;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.projectName.com.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.CustomAttribute;
 import org.testng.annotations.Test;
 
 public class FaceBook_NewAccountTest extends BaseTest {
@@ -79,10 +82,29 @@ public class FaceBook_NewAccountTest extends BaseTest {
 
 		
 		
+		//Assignment (Done)
+		
+		//Select Gender - using the HTML class 
+		
+		WebElement femaleRadioButton = driver.findElement(By.xpath("(//input[@class='_8esa'])[1]"));
+		femaleRadioButton.click();
+		
+		//Verify that desired gender is selected
+		assertTrue(femaleRadioButton.isSelected(), "Female is not selected");
+		System.out.println("Female is selected as gender");
+		
+		//Select Custom option for Gender
+		WebElement customradiobuttonElement = driver.findElement(By.xpath("(//input[@class='_8esa'])[3]"));
+		customradiobuttonElement.click();
+		
+		//Verify that custom option is selected
+	    assertTrue(customradiobuttonElement.isSelected(), "Custom option is not selected");
+	    System.out.println("Custom option is selected");
+
 		//Assignment
 		//Select Gender - Male
-		WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='2']"));
-		maleRadioButton.click();
+		//WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='2']"));
+		//maleRadioButton.click();
 		
 		/*
 		 * //Verify that desired gender is selected boolean isMaleRadioSelected =
@@ -92,8 +114,23 @@ public class FaceBook_NewAccountTest extends BaseTest {
 		 * else { System.out.println("Male is not selected."); }
 		 */
 		
+		//Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
+		//System.out.println("Male has been selected");
+		
+		
+		/*
+		 * //Verify that desired gender is selected boolean isMaleRadioSelected =
+		 * maleRadioButton.isSelected();
+		 * 
+		 * if(isMaleRadioSelected) { System.out.println("Male has been selected"); }
+		 * else { System.out.println("Male is not selected."); }
+		 */
+		
+<<<<<<< HEAD
 		Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
 		System.out.println("Male has been selected");
 
+=======
+>>>>>>> f9c83dc8735292b8ed2dd70fe5205be04bcf356c
 	}
 }
