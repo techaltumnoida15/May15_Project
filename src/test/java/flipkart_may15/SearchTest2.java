@@ -85,20 +85,16 @@ public class SearchTest2 extends BaseTest{
 		//arr[0] < arr[1]
 		//true - A
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//Check if list is in ascending or descending order
+				boolean flag = false;
+				for(int i = 0; i < priceAfterSort.size() - 1; i++) {
+					if(priceAfterSort.get(i) < priceAfterSort.get(i + 1)) 
+						flag = true;
+				}
+				if(flag == true) 
+					System.out.println("List is in ascending order");
+				else 
+					System.out.println("List is in descending order");
 		
 		
 		
