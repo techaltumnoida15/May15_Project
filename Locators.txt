@@ -46,6 +46,157 @@ class=abc678
 
 //input[contains(@class,'form-control pr-')]
 
+------------------------------------------------------
+
+To push your code 
+
+
+*** U should be in your local branch
+
+How u will know that in which branch you are
+
+git branch
+
+git branch -a
+
+To navigate to your branch
+git checkout <branchName>
+
+=============
+
+check changes
+
+git status
+
+u have to add these changes
+git add .
+
+u have to commit ur changes
+git commit -m "message"
+
+
+u have to push ur changes in ur local repo
+git push origin <branchName>
+
+
+If u want to get code from any branch
+** If you have changes then commit
+
+git pull origin <branchName>
+
+==============================================================================
+
+//*[@id="select-region-lang"]/span/span
+
+//div[@id='select-region-lang']
+
+//div[@id='select-region-lang']/span/span
+
+//span[text()='International']
+
+(//span[text()='International'])[2]
+
+//span[@class='js-dropdown-label']
+
+//span[text()='United Kingdom']
+
+//*[@id="select-region-lang"]/ul/li[2]/a/span
+
+//div[@id='select-region-lang']/ul/li[2]/a
+
+//a[@data-url-id='alternate_en_uk']
+
+//a[@data-url-id="alternate_en_uk"]
+
+//a[text()='Naukri Blog']   => contains
+
+//a[contains(text(),'Naukri Blog')]
+
+//input[contains(@class,'form-control pr')]
+
+//input[@class='form-control pr-4']
+
+====================================================
+
+CSS Selector
+
+1. 
+css = HTML-TAG[att='val']
+
+input[class*='btn-block btn-default btn']
+
+*[class*='btn-block btn-default btn']
+
+input[class='sugInp']
+input[id*='searchNow']
+
+input[class='form-control pr-4']
+
+input[class='btn btn-lg btn-block btn-default btn-search']
+
+-----------------------------------
+2. If ID is given in HTML code
+
+css = HTML-TAG#ID
+input#searchNow
+
+<input id=abc pqr 123>
+
+input#abc pqr 123    [x]
+
+input#abc.pqr.123
+
+3. If CLASS is given in HTML code
+
+css= HTML-TAG.CLASS
+
+input.sugInp - working
+
+input.btn btn-lg btn-block btn-default btn-search  [x]
+
+input.form-control.pr-4
+
+input.btn.btn-lg.btn-block.btn-default.btn-search
+
+NOTE: If space is given in between [in ID or CLASS value] then fill that space by a '.' 
+
+BKOZ: in CSS selector ' ' means next child
+------------------------------------
+
+Wild card in CSS [^, $, *]
+
+StartsWith
+input[class^='form-control pr']
+
+EndsWith
+input[class$='btn-block btn-default btn-search']
+
+Contains
+input[class*='btn-block btn-default btn']
+
+-------------------------------------
+
+' ', '>', '+'
+
+If you want to navigate next immidiate child  '>'
+
+div[id='select-region-lang']
+
+div#select-region-lang
+
+'+' will take you sibling
+
+
+div#select-region-lang > ul > li + li + li
+
+div#select-region-lang > ul > li:nth-child(3)
+
+
+
+
+
+
+
 
 
 
