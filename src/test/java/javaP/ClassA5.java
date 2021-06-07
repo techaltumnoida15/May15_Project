@@ -16,6 +16,8 @@ public class ClassA5 {
 		
 		int[] arr1 = {2, 1, 4, 6, 9, 7}; // Types to declare array in java?
 		
+	
+		
 		//steps
 		//sort this array - Assignment
 		

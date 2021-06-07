@@ -19,7 +19,7 @@ public class BaseTest {
 		String browserName = "CHROME";
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			//Open Chrome
+			//Open Chrome browser
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}

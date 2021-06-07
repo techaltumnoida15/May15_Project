@@ -16,6 +16,8 @@ public class ClassA3 {
 
 	public void method2() {
 		
+	
+		
 	}
 	
 	public void method1() {

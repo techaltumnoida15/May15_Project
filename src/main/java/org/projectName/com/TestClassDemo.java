@@ -13,6 +13,7 @@ public class TestClassDemo {
 		TestClassDemo obj1 = new TestClassDemo();
 		
 		int t = obj1.a;
+		System.out.println(t);
 		
 		obj1.method1();
 	}

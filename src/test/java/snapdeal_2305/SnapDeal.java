@@ -23,6 +23,8 @@ public class SnapDeal extends BaseTest {
 		//Assignment 1 - Go to snapdeal.com
 
 		driver.navigate().to("https://www.snapdeal.com/");
+		
+		
 
 
 
