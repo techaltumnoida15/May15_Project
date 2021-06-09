@@ -48,21 +48,19 @@ public class ClassA9 {
 
 		//=================================
 
-		int[] arr2 = {123, 456, 789, 012};
-
 		List<Integer> l3 = Arrays.asList(123, 456, 789, 124);
+		System.out.println(l3);
 		Collections.reverse(l3);
 		System.out.println(l3);
 
 		List<Integer> l6 = new ArrayList<>();
 		l3.stream()
-		.map(x -> x.toString())
-		.map(y -> new StringBuilder(y).reverse())
+		.map(x -> new StringBuilder(x.toString()).reverse())
 		.collect(Collectors.toList())
 		.forEach(z -> l6.add(Integer.parseInt(z.toString())));
+		
 		System.out.println(l6);
 
-		//.map(z -> Integer.parseInt(z)).collect(Collectors.toList());
 	}
 
 	public static void main(String[] args) {
