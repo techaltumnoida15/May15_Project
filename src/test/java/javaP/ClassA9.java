@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 public class ClassA9 {
 
 	int i = 3;
+	boolean b1 = false;
 
 	public void method1() {
 		//System.out.println(++i);
@@ -44,6 +45,19 @@ public class ClassA9 {
 		List<String> l2 = l1.stream()
 				.map(x -> new StringBuilder(x).reverse().toString())
 				.collect(Collectors.toList());
+		System.out.println(l2);
+		
+		//=================================
+		
+		
+		l1.stream()
+				.map(x -> new StringBuilder(x).reverse().toString())
+				.collect(Collectors.toList())
+				.forEach(y -> {
+					if(y.contains("aa")) {
+						b1 = true;
+					}
+				});
 		System.out.println(l2);
 
 		//=================================
