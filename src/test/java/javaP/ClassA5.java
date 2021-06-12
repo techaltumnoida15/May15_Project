@@ -39,6 +39,9 @@ public class ClassA5 {
 		boolean b1 = abc.equals(sortedArray);
 		System.out.println(b1);
 		
+		boolean b2 = abc.equals(abc);
+		System.out.println(b2);
+		
 		//============================================
 		
 		//int[] arr2 = new int[4];
@@ -55,7 +58,7 @@ public class ClassA5 {
 		 * 
 		 * Search "Mobile"
 		 * 
-		 * Select option "Sort by Price"
+		 * Select option "Sort by Price" - DONE
 		 * 
 		 * Get price of mobiles/items, and check if they are sorted by price or not
 		 * 
@@ -63,8 +66,31 @@ public class ClassA5 {
 		
 	}
 	
+	public void stringTest() {
+		
+	
+		String s = "?123";
+		String[] ss = s.split("\\?");
+		System.out.println(s.split("\\?")[0]);
+		System.out.println(s.split("\\?")[1]);
+		
+		System.out.println(s.substring(1, s.length()));
+		
+		/*
+		String s = "?1,300";
+		
+		String[] arr = s.split(",");    //0=> ?1, 1=> 300
+		
+		String a = s.split(",")[0];
+		System.out.println(a);
+		
+		String c = s.split(",")[0] + s.split(",")[1];
+		*/
+	}
+	
 	public static void main(String[] args) {
 		ClassA5 obj = new ClassA5();
-		obj.method1();
+		//obj.method1();
+		obj.stringTest();
 	}
 }
