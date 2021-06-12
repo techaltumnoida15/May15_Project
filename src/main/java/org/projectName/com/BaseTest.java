@@ -1,5 +1,8 @@
 package org.projectName.com;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,6 +16,7 @@ public class BaseTest {
 
 	// Declare WebDriver
 	protected WebDriver driver;
+	//List<String> myList;
 
 	@BeforeMethod
 	public void openBrowser() throws Exception {
@@ -22,6 +26,9 @@ public class BaseTest {
 			//Open Chrome browser
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			//myList = new ArrayList<String>();
+			
+			//ChromeDriver chdr = new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
 			//Open FF
