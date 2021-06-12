@@ -126,11 +126,10 @@ public class FaceBook_NewAccountTest extends BaseTest {
 		 * else { System.out.println("Male is not selected."); }
 		 */
 		
-<<<<<<< HEAD
-		Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
-		System.out.println("Male has been selected");
 
-=======
->>>>>>> f9c83dc8735292b8ed2dd70fe5205be04bcf356c
+		//Assert.assertTrue(maleRadioButton.isSelected(), "Male is not selected.");
+		//System.out.println("Male has been selected");
+
+
 	}
 }
