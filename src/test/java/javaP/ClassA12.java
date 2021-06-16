@@ -5,12 +5,17 @@ public class ClassA12 {
 	public int t = 10;
 	public static String  propFile = "Java";
 	
+	static String xlPath;
+	static String s2 ;
+	static String s3 ;
+	static String s4 ;
+	
 	static {
-		String xlPath = "C:\\xlReader\\abc.xls";
-		String propFile = "Java";
-		String s2 = "Java";
-		String s3 = "Java";
-		String s4 = "Java";
+		xlPath = "C:\\xlReader\\abc.xls";
+		propFile = "Java";
+		s2 = "Java";
+		s3 = "Java";
+		s4 = "Java";
 	}
 	
 	public static void staticMethod() {
@@ -30,15 +35,15 @@ public class ClassA12 {
 		//Assinment : why cant access static
 	}
 	
-	/*
-	 * public static void main(String[] args) { ClassA12.staticMethod();
-	 * 
-	 * new ClassA12().method1();
-	 * 
-	 * //ClassA12().xl
-	 * 
-	 * }
-	 */
+	
+	  public static void main(String[] args) { ClassA12.staticMethod();
+	  
+	  new ClassA12().method1();
+	  
+	  //ClassA12().xl
+	  
+	  }
+	 
 	
 }
 

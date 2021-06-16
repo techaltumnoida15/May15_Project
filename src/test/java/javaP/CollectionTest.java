@@ -28,6 +28,7 @@ public class CollectionTest {
 		System.out.println(myList);
 		
 		int listSize = myList.size();
+
 		System.out.println(listSize);
 		
 		myList.remove(1);
