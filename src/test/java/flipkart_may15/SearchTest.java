@@ -25,7 +25,7 @@ public class SearchTest extends BaseTest{
 		driver.findElement(By.cssSelector("button[class='_2KpZ6l _2doB4z']")).click();
 
 		//List<WebElement> myList = driver.findElements(By.id("abc"));
-		
+
 		//Search items
 		String searchItem = "mobiles";
 		WebElement searchTextbox = driver.findElement(By.name("q"));
@@ -43,11 +43,11 @@ public class SearchTest extends BaseTest{
 		System.out.println(totalElements.getText());
 
 		//driver.findElement(By.cssSelector("div[class='_5THWM1'] > div:nth-child(4)")).click();
-		
+
 		//driver.findElement(By.cssSelector("div[class='_5THWM1']")).findElements(By.tagName("span")) 
-		
+
 		List<WebElement> allTabsContect = driver.findElements(By.cssSelector("div[class='_5THWM1'] > *"));
-		
+
 		for(int i = 0; i< allTabsContect.size(); i++) {
 			String tabText = allTabsContect.get(i).getText();
 			if(tabText.equalsIgnoreCase("Price -- Low to High")) {
@@ -55,24 +55,24 @@ public class SearchTest extends BaseTest{
 				break;
 			}
 		}
-		
+
 		Thread.sleep(3000);
 		//Extract price of all items of 1 first page
 		List<String> allPrice = new ArrayList<>();
 		List<WebElement> allItemsPriceList = driver.findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"));
-		
+
 		for(int j = 0; j<allItemsPriceList.size(); j++) {
 			String s = allItemsPriceList.get(j).getText();
-			
-			String itemPrice = s.substring(1, s.length());
-			allPrice.add(itemPrice);
+			String ItemPrice = s.substring(1, s.length());
+			allPrice.add(ItemPrice);
+
 		}
-		
+
 		System.out.println(allPrice);
-		
+
 		//New List<Integer>  <=    from allPrice(String)
-		
-		
+
+
 	}
 }
 

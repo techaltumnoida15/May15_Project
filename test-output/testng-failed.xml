@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="may23.Snapdeel">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="enterMobileNumber"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- may23.Snapdeel -->
-=======
-      <class name="baesystems11g.MegaMenuTest">
-=======
       <class name="flipkart_may15.SearchTest2">
->>>>>>> de418332df1b7e5741283f29fcccbe6d2b9c11a1
         <methods>
           <include name="searchTest"/>
-          <include name="quitBrowser"/>
           <include name="openBrowser"/>
+          <include name="quitBrowser"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- baesystems11g.MegaMenuTest -->
->>>>>>> f9c83dc8735292b8ed2dd70fe5205be04bcf356c
-=======
       </class> <!-- flipkart_may15.SearchTest2 -->
->>>>>>> de418332df1b7e5741283f29fcccbe6d2b9c11a1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

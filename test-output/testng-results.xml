@@ -2,53 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <suite started-at="2021-05-28T00:14:13 IST" name="Default suite" finished-at="2021-05-28T00:14:31 IST" duration-ms="17569">
+  <suite started-at="2021-06-18T00:28:20 IST" name="Default suite" finished-at="2021-06-18T00:28:40 IST" duration-ms="19600">
     <groups>
     </groups>
-    <test started-at="2021-05-28T00:14:13 IST" name="Default test" finished-at="2021-05-28T00:14:31 IST" duration-ms="17569">
-      <class name="may23.Snapdeel">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:may23.Snapdeel@48974e45]" started-at="2021-05-28T00:14:13 IST" name="openBrowser" finished-at="2021-05-28T00:14:16 IST" duration-ms="3040" status="PASS">
+    <test started-at="2021-06-18T00:28:20 IST" name="Default test" finished-at="2021-06-18T00:28:40 IST" duration-ms="19600">
+      <class name="flipkart_may15.SearchTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:flipkart_may15.SearchTest@48974e45]" started-at="2021-06-18T00:28:20 IST" name="openBrowser" finished-at="2021-06-18T00:28:24 IST" duration-ms="3074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="enterMobileNumber()[pri:0, instance:may23.Snapdeel@48974e45]" started-at="2021-05-28T00:14:16 IST" name="enterMobileNumber" finished-at="2021-05-28T00:14:30 IST" duration-ms="13646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterMobileNumber -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:may23.Snapdeel@48974e45]" started-at="2021-05-28T00:14:30 IST" name="quitBrowser" finished-at="2021-05-28T00:14:31 IST" duration-ms="830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- may23.Snapdeel -->
-=======
-  <suite name="Default suite" duration-ms="27333" started-at="2021-06-05T16:57:39 IST" finished-at="2021-06-05T16:58:06 IST">
-=======
-  <suite name="Default suite" duration-ms="16156" started-at="2021-06-06T16:16:16 IST" finished-at="2021-06-06T16:16:32 IST">
->>>>>>> de418332df1b7e5741283f29fcccbe6d2b9c11a1
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="16156" started-at="2021-06-06T16:16:16 IST" finished-at="2021-06-06T16:16:32 IST">
-      <class name="flipkart_may15.SearchTest2">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:flipkart_may15.SearchTest2@7dc222ae]" name="openBrowser" is-config="true" duration-ms="3036" started-at="2021-06-06T16:16:16 IST" finished-at="2021-06-06T16:16:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="searchTest()[pri:0, instance:flipkart_may15.SearchTest2@7dc222ae]" name="searchTest" duration-ms="13093" started-at="2021-06-06T16:16:19 IST" finished-at="2021-06-06T16:16:32 IST">
+        <test-method signature="searchTest()[pri:0, instance:flipkart_may15.SearchTest@48974e45]" started-at="2021-06-18T00:28:24 IST" name="searchTest" finished-at="2021-06-18T00:28:40 IST" duration-ms="16447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:flipkart_may15.SearchTest2@7dc222ae]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-06-06T16:16:32 IST" finished-at="2021-06-06T16:16:32 IST">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:flipkart_may15.SearchTest@48974e45]" started-at="2021-06-18T00:28:40 IST" name="quitBrowser" finished-at="2021-06-18T00:28:40 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-<<<<<<< HEAD
-      </class> <!-- snapdeal_2305.SnapDeal -->
->>>>>>> f9c83dc8735292b8ed2dd70fe5205be04bcf356c
-=======
-      </class> <!-- flipkart_may15.SearchTest2 -->
->>>>>>> de418332df1b7e5741283f29fcccbe6d2b9c11a1
+      </class> <!-- flipkart_may15.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
