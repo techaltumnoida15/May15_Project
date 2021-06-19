@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Selenium UI Test Suite - Amazon" parallel="methods" thread-count="2" verbose="1" >
+<parameter name="browserName" value="chrome"></parameter>
+<parameter name="osName" value="wins"></parameter>
+ 
+  
+   <!-- <test name="SearchItems_List" >
+    <classes>
+       <class name="flipkart_may15.SearchItems_List" />
+    </classes>
+  </test>
+  
+   
+    <test name="SearchTest2" >
+    <classes>
+       <class name="flipkart_may15.SearchTest2" />
+    </classes>
+  </test>
+  
+    
+     <test name="Login Test" >
+    <classes>
+       <class name="flipkart_may15.LoginTest" />
+    </classes>
+  </test> -->
+  
+  
+  
+   
+    <test name="Grouped Tests" >
+    <classes>
+       <class name="flipkart_may15.SearchTest2" />
+       <class name="flipkart_may15.SearchItems_List" />
+       <class name="flipkart_may15.LoginTest" />
+    </classes>
+  	</test>
+    
+ </suite>
+  
+  
+  
+  <!-- pckaeName.className -->

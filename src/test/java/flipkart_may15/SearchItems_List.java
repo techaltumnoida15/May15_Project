@@ -10,9 +10,10 @@ import org.testng.annotations.Test;
 
 public class SearchItems_List extends BaseTest{
 
-	@Test
+	@Test(priority = 2)
 	public void testSearchItems() throws Exception {
 		driver.get("http://www.flipkart.com");
+		System.out.println("I am P2");
 		//Wait 
 		Thread.sleep(3000);
 		
