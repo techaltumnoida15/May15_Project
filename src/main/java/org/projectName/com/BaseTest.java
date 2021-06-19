@@ -15,6 +15,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -24,10 +25,12 @@ public class BaseTest {
 	protected WebDriver driver;
 	//List<String> myList;
 
+	@Parameters({"browserName", "osName"})
 	@BeforeMethod
-	public void openBrowser() throws Exception {
-		String browserName = "CHROME";
+	public void openBrowser(String browserName, String osName) throws Exception {
+		//String browserName = "CHROME";
 		
+<<<<<<< HEAD
 		if(browserName.equalsIgnoreCase("chrome")) {
 			//Open Chrome browser
 			WebDriverManager.chromedriver().setup();
@@ -45,11 +48,35 @@ public class BaseTest {
 			//Open IE
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
+=======
+		if(osName.equalsIgnoreCase("mac")) {
+			//Safari
+>>>>>>> 1302b0ed9058b3c11f188faa7e0ce5f827ed7202
 		}
 		else {
-			throw new Exception("This browser is not mention.");
+			//Wins
+			if(browserName.equalsIgnoreCase("chrome")) {
+				//Open Chrome
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver();
+				//myList = new ArrayList<String>();
+				
+				//ChromeDriver chdr = new ChromeDriver();
+			}
+			else if(browserName.equalsIgnoreCase("firefox")) {
+				//Open FF
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+			}
+			else if(browserName.equalsIgnoreCase("ie")) {
+				//Open IE
+				WebDriverManager.iedriver().setup();
+				driver = new InternetExplorerDriver();
+			}
+			else {
+				throw new Exception("This browser is not mention.");
+			}
 		}
-		
 		driver.manage().window().maximize();
 		System.out.println("window maximized");
 
@@ -60,14 +87,14 @@ public class BaseTest {
 
 	@AfterMethod
 	public void quitBrowser(ITestResult result) throws Exception {   //interface in TestNG are called as listeners
-		if(!result.isSuccess()) {
-			//Take Screenshot
-			File srcScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			
-			//TestCaseName_dd-MM-yyyy_hh-mm-ss.jpeg
-			
-			FileUtils.moveFile(srcScreenshot, new File("C:\\abc\\123.jpg"));
-		}
+		/*
+		 * if(!result.isSuccess()) { //Take Screenshot File srcScreenshot =
+		 * ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 * 
+		 * //TestCaseName_dd-MM-yyyy_hh-mm-ss.jpeg
+		 * 
+		 * FileUtils.moveFile(srcScreenshot, new File("C:\\abc\\123.jpg")); }
+		 */
 		
 		
 		driver.quit();

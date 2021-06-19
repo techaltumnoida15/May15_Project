@@ -28,9 +28,9 @@ public abstract class AbsClass {
 }
 
 
-class ClassA14 extends AbsClass{
+class ClassA15 extends AbsClass{
 	
-	public ClassA14() {
+	public ClassA15() {
 		super();
 	}
 
@@ -52,7 +52,7 @@ class ClassA14 extends AbsClass{
 	public static void main(String[] args) {
 		ClassA14 obj = new ClassA14();
 		
-		obj.method4();
+		//obj.method4();
 	}
 
 }

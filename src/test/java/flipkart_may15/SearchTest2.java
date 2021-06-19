@@ -1,15 +1,14 @@
 package flipkart_may15;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
 import org.testng.Assert;
@@ -17,9 +16,10 @@ import org.testng.annotations.Test;
 
 public class SearchTest2 extends BaseTest{
 
-	@Test
+	@Test(priority = 1)
 	public void searchTest() throws Exception {
 		driver.get("http://www.flipkart.com");
+		System.out.println("I am p1");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(4000);
 
@@ -73,6 +73,8 @@ public class SearchTest2 extends BaseTest{
 
 		Assert.assertTrue(priceBeforeSort.equals(priceAfterSort), "List is not sorted.");
 		System.out.println("List is sorted.");
+		
+		//File SrcScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
 		//Check if list is in ascending or descending order
 		boolean flag = false;
