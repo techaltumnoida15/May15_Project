@@ -1,9 +1,18 @@
 package org.projectName.com;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -13,6 +22,7 @@ public class BaseTest {
 
 	// Declare WebDriver
 	protected WebDriver driver;
+	//List<String> myList;
 
 	@BeforeMethod
 	public void openBrowser() throws Exception {
@@ -22,6 +32,9 @@ public class BaseTest {
 			//Open Chrome
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			//myList = new ArrayList<String>();
+			
+			//ChromeDriver chdr = new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
 			//Open FF
@@ -46,19 +59,19 @@ public class BaseTest {
 	}
 
 	@AfterMethod
-	public void quitBrowser() {
+	public void quitBrowser(ITestResult result) throws Exception {   //interface in TestNG are called as listeners
+		if(!result.isSuccess()) {
+			//Take Screenshot
+			File srcScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			
+			//TestCaseName_dd-MM-yyyy_hh-mm-ss.jpeg
+			
+			FileUtils.moveFile(srcScreenshot, new File("C:\\abc\\123.jpg"));
+		}
 		
-		/*
-		 * TestClassDemo obj = new TestClassDemo(); int s = obj.a;
-		 * 
-		 * obj.method1();
-		 */
 		
-		
-		System.out.println("window close");
-		//driver.quit();
+		driver.quit();
 	}
-
 }
   
 

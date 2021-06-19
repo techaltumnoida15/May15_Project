@@ -24,6 +24,8 @@ public class SearchTest extends BaseTest{
 		//Close Popup
 		driver.findElement(By.cssSelector("button[class='_2KpZ6l _2doB4z']")).click();
 
+		//List<WebElement> myList = driver.findElements(By.id("abc"));
+		
 		//Search items
 		String searchItem = "mobiles";
 		WebElement searchTextbox = driver.findElement(By.name("q"));
