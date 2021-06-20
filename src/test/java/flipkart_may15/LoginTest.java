@@ -8,9 +8,10 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest{
 
-	@Test
+	@Test(description = "Its a login Test", priority = 0, timeOut = 9000, enabled = false)
 	public void loginTest() throws Exception {
 		driver.get("http://www.flipkart.com");
+		System.out.println("I am P0");
 		//Wait 
 		Thread.sleep(3000);
 
@@ -55,4 +56,8 @@ public class LoginTest extends BaseTest{
 		
 		
 	}
+
+	/*
+	 * @Test public void anotherTest() { //Fail }
+	 */
 }
