@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 /*
@@ -22,19 +23,23 @@ public class SnapDeal extends BaseTest {
 
 		//Assignment 1 - Go to snapdeal.com
 
+<<<<<<< HEAD
 		driver.navigate().to("https://www.snapdeal.com/");
 		
 		
+=======
+		DriverManager.getDriver().navigate().to("https://www.snapdeal.com/");
+>>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
 
 
 
 		// Assignment 2- Find the sign- in locator 
 
-		WebElement signIn = driver.findElement(By.xpath("//span[@class='accountUserName col-xs-12 reset-padding']"));
+		WebElement signIn = DriverManager.getDriver().findElement(By.xpath("//span[@class='accountUserName col-xs-12 reset-padding']"));
 
 		//Assignment 3 -Mouse over on the Sign-in element
 
-		Actions objActions = new Actions (driver);
+		Actions objActions = new Actions (DriverManager.getDriver());
 
 		objActions.moveToElement(signIn);
 
@@ -48,7 +53,7 @@ public class SnapDeal extends BaseTest {
 
 		// Assignment 4- Click on Login
 
-		WebElement loginElement  = driver.findElement(By.xpath("//a[text()='login']"));
+		WebElement loginElement  = DriverManager.getDriver().findElement(By.xpath("//a[text()='login']"));
 		loginElement.click();
 
 		System.out.println("Sign-in clicked");
@@ -56,20 +61,20 @@ public class SnapDeal extends BaseTest {
 		//Assignment 5- Enter mobile number on the login popup\
 
 
-		//WebElement Mobileinputbox = driver.findElement(By.xpath("//*[@id=\"userName\"]"));
+		//WebElement Mobileinputbox = DriverManager.getDriver().findElement(By.xpath("//*[@id=\"userName\"]"));
 
-		//driver.switchTo().frame(Mobileinputbox);
-		WebElement frameLogin = driver.findElement(By.id("loginIframe"));
-		driver.switchTo().frame(frameLogin);
+		//DriverManager.getDriver().switchTo().frame(Mobileinputbox);
+		WebElement frameLogin = DriverManager.getDriver().findElement(By.id("loginIframe"));
+		DriverManager.getDriver().switchTo().frame(frameLogin);
 
 		System.out.println("Popup Frame selected to Enter mobilEnter number");
 
-		WebElement Mobileinputbox = driver.findElement(By.xpath("//input[@name='username']"));
+		WebElement Mobileinputbox = DriverManager.getDriver().findElement(By.xpath("//input[@name='username']"));
 		Mobileinputbox.sendKeys("8447855711");
 
 		//Click Continue
 
-		WebElement continueBT = driver.findElement(By.xpath("//*[@id='checkUser']"));
+		WebElement continueBT = DriverManager.getDriver().findElement(By.xpath("//*[@id='checkUser']"));
 
 		continueBT.click();
 

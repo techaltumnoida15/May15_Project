@@ -5,17 +5,18 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 public class HandleAjaxListTest extends BaseTest{
 
 	@Test
 	public void handleAjaxList() throws Exception {
-		driver.get("http://www.google.com");
+		DriverManager.getDriver().get("http://www.google.com");
 		
 		//Type some search keyword
 		String searchKeyword = "python";
-		WebElement googleTextbox = driver.findElement(By.name("q"));
+		WebElement googleTextbox = DriverManager.getDriver().findElement(By.name("q"));
 		googleTextbox.sendKeys(searchKeyword);
 		
 		//wait
@@ -24,7 +25,7 @@ public class HandleAjaxListTest extends BaseTest{
 		String clickableSuggestion = "python basics";
 		
 		//Handle suggestion List
-		List<WebElement> suggestionList = driver.findElement(By.xpath("//ul[@class='erkvQe']")).findElements(By.tagName("li"));
+		List<WebElement> suggestionList = DriverManager.getDriver().findElement(By.xpath("//ul[@class='erkvQe']")).findElements(By.tagName("li"));
 		System.out.println("Total suggestions are = " + suggestionList.size());
 		
 		//boolean isSuestionFound = false;

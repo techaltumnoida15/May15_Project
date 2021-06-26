@@ -1,32 +1,13 @@
 package org.projectName.com;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	// Declare WebDriver
-	protected WebDriver driver;
-	//List<String> myList;
-
-	@Parameters({"browserName", "osName"})
+	//@Parameters({"browserName", "osName"})
 	@BeforeMethod
+<<<<<<< HEAD
 	public void openBrowser(String browserName, String osName) throws Exception {
 		//String browserName = "CHROME";
 		
@@ -84,22 +65,16 @@ public class BaseTest {
 
 
 		//driver.get("https://www.facebook.com/login.php");
+=======
+	public void openBrowser() throws Exception {
+		Driver.initDriver();
+>>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
 
 	}
 
 	@AfterMethod
-	public void quitBrowser(ITestResult result) throws Exception {   //interface in TestNG are called as listeners
-		/*
-		 * if(!result.isSuccess()) { //Take Screenshot File srcScreenshot =
-		 * ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		 * 
-		 * //TestCaseName_dd-MM-yyyy_hh-mm-ss.jpeg
-		 * 
-		 * FileUtils.moveFile(srcScreenshot, new File("C:\\abc\\123.jpg")); }
-		 */
-		
-		
-		driver.quit();
+	public void quitBrowser() throws Exception {   //interface in TestNG are called as listeners
+		Driver.quitDriver();
 	}
 }
   
