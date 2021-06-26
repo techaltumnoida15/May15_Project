@@ -4,22 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 public class MouseOverTest extends BaseTest{
 
 	@Test
 	public void  mouseOverTest() {
-		//driver.get("http://www.naukri.com"); 
+		//DriverManager.getDriver().get("http://www.naukri.com"); 
 		
-		driver.navigate().to("http://www.naukri.com");
+		DriverManager.getDriver().navigate().to("http://www.naukri.com");
 		
 		//Tech - No difference
 		//Find More element
-		WebElement more = driver.findElement(By.xpath("//div[text()='More']"));
+		WebElement more = DriverManager.getDriver().findElement(By.xpath("//div[text()='More']"));
 		
 		//Mouse Over - More
-		Actions obj = new Actions(driver);
+		Actions obj = new Actions(DriverManager.getDriver());
 		obj.moveToElement(more);
 		//Do something
 		obj.build().perform();      //using 'Actions' class
@@ -30,7 +31,7 @@ public class MouseOverTest extends BaseTest{
 		 */
 		
 		//Click on Naukri Blog
-		WebElement naukriBlog = driver.findElement(By.xpath("//a[contains(text(),'Naukri Blog')]"));
+		WebElement naukriBlog = DriverManager.getDriver().findElement(By.xpath("//a[contains(text(),'Naukri Blog')]"));
 		naukriBlog.click();
 	}	
 }
