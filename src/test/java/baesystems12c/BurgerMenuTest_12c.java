@@ -1,4 +1,4 @@
-package baesystems11g;
+package baesystems12c;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -6,14 +6,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
 import org.testng.annotations.Test;
 
-public class BurgerMenuTest extends BaseTest {
+public class BurgerMenuTest_12c extends BaseTest {
 	
 	@Test
 	public void burgermenulist () {
 	
 		// Navigate to the URL
 		
-		driver.navigate().to("http://dev.dotcom.baesystems.com/en/home");
+		driver.navigate().to("http://baesystems.com/en/home");
 		
 		// Find burger Menu Element
 		

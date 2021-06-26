@@ -1,4 +1,4 @@
-package baesystems11g;
+package baesystems12c;
 
 import java.awt.geom.Area;
 import java.lang.Character.UnicodeScript;
@@ -12,14 +12,12 @@ import org.testng.annotations.Test;
 
 import okhttp3.internal.connection.RouteDatabase;
 
-public class RFSearchTest extends BaseTest {
+public class RFSearchTest_12c extends BaseTest {
 
 	@Test
 	public void pagecheck() throws InterruptedException {
 
 		/* Verify user is on desired site */
-		
-		driver.get("http://dev.dotcom.baesystems.com/en/home");
 
 		String pageTitle = driver.getTitle();
 		if (pageTitle.contains("BAE System"));

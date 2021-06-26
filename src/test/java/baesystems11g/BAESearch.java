@@ -9,10 +9,11 @@ public class BAESearch extends BaseTest {
 
 @Test
 
-
 	public void searchclick() {
 
 		/* Mega menu Search icon is clicked */
+	 
+	driver.navigate().to("https://www.baesystems.com/en/home");
 
 		driver.findElement(By.xpath("//*[@class=\"icon-search top-level-navigation-link desktop-content disable\"]"))
 				.click();

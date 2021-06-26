@@ -25,15 +25,16 @@ public class BaseTest {
 	protected WebDriver driver;
 	//List<String> myList;
 
-	@Parameters({"browserName", "osName"})
+	//@Parameters({"browserName", "osName"})
 	@BeforeMethod
-	public void openBrowser(String browserName, String osName) throws Exception {
-		//String browserName = "CHROME";
+	//public void openBrowser(String browserName, String osName) throws Exception {
+		public void openBrowser() throws Exception {
+		String browserName = "CHROME";
 		
-		if(osName.equalsIgnoreCase("mac")) {
+		//if(osName.equalsIgnoreCase("mac")) {
 			//Safari
-		}
-		else {
+		//}
+		//else {
 			//Wins
 			if(browserName.equalsIgnoreCase("chrome")) {
 				//Open Chrome
@@ -56,12 +57,12 @@ public class BaseTest {
 			else {
 				throw new Exception("This browser is not mention.");
 			}
-		}
+		//}
 		driver.manage().window().maximize();
 		System.out.println("window maximized");
 
 
-		//driver.get("https://www.facebook.com/login.php");
+		//driver.get("https://www.baesystems.com/en/home");
 
 	}
 
