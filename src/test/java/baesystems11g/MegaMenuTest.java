@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 public class MegaMenuTest extends BaseTest{
@@ -14,16 +15,16 @@ public class MegaMenuTest extends BaseTest{
 	
 	public void whatwedomenuitem () throws InterruptedException {
 		
-		driver.get("https://www.baesystems.com/en/home");
+		DriverManager.getDriver().get("https://www.baesystems.com/en/home");
 		
 		Thread.sleep(2000);
 		
 		
-		WebElement Firstmenu = driver.findElement(By.xpath ("//a[@class='top-level-navigation-link']"));
+		WebElement Firstmenu = DriverManager.getDriver().findElement(By.xpath ("//a[@class='top-level-navigation-link']"));
 		
 		// Mouse over on 'what we do'
 		
-		Actions objActions = new Actions (driver);
+		Actions objActions = new Actions (DriverManager.getDriver());
 		
 		objActions.moveToElement(Firstmenu);
 		
@@ -37,7 +38,7 @@ public class MegaMenuTest extends BaseTest{
 		
 		System.out.println("'What We Do' was user clicked");
 		
-		String firstDestinationpage = driver.getCurrentUrl();
+		String firstDestinationpage = DriverManager.getDriver().getCurrentUrl();
 		
 	  System.out.println(firstDestinationpage);
 		

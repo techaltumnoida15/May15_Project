@@ -14,6 +14,8 @@ public class ClassA16 {
 				.collect(Collectors.toList());
 
 		System.out.println(myL);
+		
+		
 
 	}
 
