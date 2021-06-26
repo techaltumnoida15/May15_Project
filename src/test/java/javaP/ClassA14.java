@@ -11,7 +11,7 @@ public class ClassA14 {
 		
 		//extract name start with "A", remove duplicates
 		
-		List<String> myList = Arrays.asList("Amit", "Ajay", "Kapil", "Kundan", "Sahil", "Sahil");
+		List<String> myList = Arrays.asList("Amit", "Ajay", "Kapil", "Kundan", "Aahil", "Aahil");
 		
 		myList.stream()
 			.distinct()

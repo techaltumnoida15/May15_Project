@@ -30,7 +30,7 @@ public class BaseTest {
 	public void openBrowser(String browserName, String osName) throws Exception {
 		//String browserName = "CHROME";
 		
-<<<<<<< HEAD
+
 		if(browserName.equalsIgnoreCase("chrome")) {
 			//Open Chrome browser
 			WebDriverManager.chromedriver().setup();
@@ -48,10 +48,10 @@ public class BaseTest {
 			//Open IE
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
-=======
+
 		if(osName.equalsIgnoreCase("mac")) {
 			//Safari
->>>>>>> 1302b0ed9058b3c11f188faa7e0ce5f827ed7202
+
 		}
 		else {
 			//Wins
@@ -77,6 +77,8 @@ public class BaseTest {
 				throw new Exception("This browser is not mention.");
 			}
 		}
+		}
+		
 		driver.manage().window().maximize();
 		System.out.println("window maximized");
 
