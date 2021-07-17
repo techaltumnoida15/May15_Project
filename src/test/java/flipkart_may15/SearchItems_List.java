@@ -6,11 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
 import org.projectName.com.DriverManager;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class SearchItems_List extends BaseTest{
 
-	@Test(priority = 2)
+	//DataProvider
+	@Test
 	public void testSearchItems() throws Exception {
 		DriverManager.getDriver().get("http://www.flipkart.com");
 		System.out.println("I am P2");
@@ -72,6 +74,14 @@ public class SearchItems_List extends BaseTest{
 		
 		System.out.println(count);
 	}
+
+
+
+	@DataProvider
+	public void getData() {
+		//Test Data/ Locator
+	}
+
 }
 
 

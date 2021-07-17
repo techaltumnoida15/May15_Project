@@ -1,5 +1,7 @@
 package org.projectName.com;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,10 +27,11 @@ public final class Driver {
 				//Open Chrome
 				WebDriverManager.chromedriver().setup();
 
-				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.setHeadless(true);
+				//ChromeOptions chromeOptions = new ChromeOptions();
+				//chromeOptions.setHeadless(true);
 
-				driver = new ChromeDriver(chromeOptions);
+				//driver = new ChromeDriver(chromeOptions);
+				driver = new ChromeDriver();
 			}
 			else if(browserName.equalsIgnoreCase("firefox")) {
 				//Open FF
@@ -44,10 +47,14 @@ public final class Driver {
 				throw new Exception("This browser is not mention.");
 			}
 		}
+		//driver.manage().timeouts().setScriptTimeout(5, TimeUnit.MINUTES);   //Imp Wait
+		//driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);   //imp wait
+		
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		
 		DriverManager.setWebDriver(driver);
-		//System.out.println("window maximized");
-
-		//return driver;
+		
 	}
 
 	public static void quitDriver() {
