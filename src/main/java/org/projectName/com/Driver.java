@@ -47,13 +47,10 @@ public final class Driver {
 				throw new Exception("This browser is not mention.");
 			}
 		}
-		//driver.manage().timeouts().setScriptTimeout(5, TimeUnit.MINUTES);   //Imp Wait
-		//driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);   //imp wait
-		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		
 		
 		DriverManager.setWebDriver(driver);
+		//DriverManager.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		DriverManager.getDriver().manage().window().maximize();
 		
 	}
 
