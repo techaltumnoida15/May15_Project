@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BAE 12c Suite" parallel="methods" thread-count="2" verbose="1">
+
+
+  <test thread-count="5" name="BAE 12c Run">
+    <classes>
+
+      <class name="baesystems12c.BAESearch_12c"/>
+      <class name="baesystems12c.BurgerMenuTest_12c"/>
+      <class name="baesystems12c.RFSearchTest_12c"/>
+      <class name="baesystems12c.MegaMenuTest_12c"/>
+    </classes>
+  </test> <!-- BAE 12c Run -->
+</suite> <!-- Test Suite -->

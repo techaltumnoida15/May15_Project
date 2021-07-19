@@ -23,7 +23,7 @@ Relative xpath
 
 //div[@class='mTxt']
 
-
+//a[@class='second-level-navigation-link'][5]
 
 
 ** If there are more then 1 elements of same xpath and you 
@@ -136,6 +136,9 @@ input[id*='searchNow']
 input[class='form-control pr-4']
 
 input[class='btn btn-lg btn-block btn-default btn-search']
+
+
+a[class*='top-level-navigation-link']
 
 -----------------------------------
 2. If ID is given in HTML code
