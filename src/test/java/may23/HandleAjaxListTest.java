@@ -1,30 +1,52 @@
 package may23;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 public class HandleAjaxListTest extends BaseTest{
 
 	@Test
 	public void handleAjaxList() throws Exception {
-		driver.get("http://www.google.com");
+		DriverManager.getDriver().get("http://www.google.com");
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), 10);
+
+		
+		//Check that page is loaded
+		wait.until(d -> ((JavascriptExecutor)DriverManager.getDriver()).executeScript("return document.readyState").equals("complete"));		
 		
 		//Type some search keyword
 		String searchKeyword = "python";
-		WebElement googleTextbox = driver.findElement(By.name("q"));
+		WebElement googleTextbox = DriverManager.getDriver().findElement(By.name("q"));
 		googleTextbox.sendKeys(searchKeyword);
 		
 		//wait
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		
+		wait
+		.pollingEvery(Duration.ofMillis(100))
+		.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='erkvQe']")));
+		
+		//.until(ExpectedConditions.visibilityOf(DriverManager.getDriver().findElement(By.cssSelector("//ul[@class='erkvQe']"))))
+		
+		
+		//Explicit wait
+		//1. Wait - interface
+		//Wait<F>
 		
 		String clickableSuggestion = "python basics";
 		
 		//Handle suggestion List
-		List<WebElement> suggestionList = driver.findElement(By.xpath("//ul[@class='erkvQe']")).findElements(By.tagName("li"));
+		List<WebElement> suggestionList = DriverManager.getDriver().findElement(By.xpath("//ul[@class='erkvQe']")).findElements(By.tagName("li"));
 		System.out.println("Total suggestions are = " + suggestionList.size());
 		
 		//boolean isSuestionFound = false;

@@ -1,16 +1,10 @@
 package baesystems11g;
 
-import java.awt.geom.Area;
-import java.lang.Character.UnicodeScript;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
-import org.testng.annotations.DataProvider;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
-
-import okhttp3.internal.connection.RouteDatabase;
 
 public class RFSearchTest extends BaseTest {
 
@@ -19,13 +13,13 @@ public class RFSearchTest extends BaseTest {
 
 		/* Verify user is on desired site */
 
-		String pageTitle = driver.getTitle();
+		String pageTitle = DriverManager.getDriver().getTitle();
 		if (pageTitle.contains("BAE System"))
 			;
 
 		System.out.println("You are on the correct page");
 
-		String pgURL = driver.getCurrentUrl();
+		String pgURL = DriverManager.getDriver().getCurrentUrl();
 		System.out.println(pgURL);
 
 		// Wait
@@ -33,7 +27,7 @@ public class RFSearchTest extends BaseTest {
 
 		/* Accept page cookies */
 
-		driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+		DriverManager.getDriver().findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
 		System.out.println("Page cookies accepted");
 
 		// Wait
@@ -41,7 +35,7 @@ public class RFSearchTest extends BaseTest {
 
 		/* Region dropdown opens */
 
-		driver.findElement(By.xpath("//span[@class='js-dropdown-label']")).click();
+		DriverManager.getDriver().findElement(By.xpath("//span[@class='js-dropdown-label']")).click();
 		System.out.println("International region dropdown was clicked and gets open");
 
 		/* Navigate to us region */
@@ -49,10 +43,10 @@ public class RFSearchTest extends BaseTest {
 		// Wait
 		Thread.sleep(3000);
 
-		//WebElement uSRegionElement = driver.findElement(By.xpath("//li[@class='region-selector__item'])[2]/a"));
+		//WebElement uSRegionElement = DriverManager.getDriver().findElement(By.xpath("//li[@class='region-selector__item'])[2]/a"));
 
 		WebElement uSRegionElement =
-		 driver.findElement(By.xpath("//*[@id=\"select-region-lang\"]/ul/li[3]/a"));
+		 DriverManager.getDriver().findElement(By.xpath("//*[@id=\"select-region-lang\"]/ul/li[3]/a"));
 
 		uSRegionElement.click();
 

@@ -1,48 +1,51 @@
 package flipkart_may15;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import july17.PropertyFile;
+
 public class SearchTest2 extends BaseTest{
 
-	@Test(priority = 1)
+	@Test
 	public void searchTest() throws Exception {
-		driver.get("http://www.flipkart.com");
+		//PropertyFile p1 = new PropertyFile();
+		//String url = p1.getData("url");
+		
+		DriverManager.getDriver().get(PropertyFile.getData("url"));
 		System.out.println("I am p1");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		DriverManager.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(4000);
    
 		//Close Popup
-		driver.findElement(By.cssSelector("button[class='_2KpZ6l _2doB4z']")).click();
+		DriverManager.getDriver().findElement(By.cssSelector(PropertyFile.getData("cssClosePopup"))).click();
 
 		//Search items
 		String searchItem = "mobiles";
-		WebElement searchTextbox = driver.findElement(By.name("q"));
+		WebElement searchTextbox = DriverManager.getDriver().findElement(By.name("q"));
 		searchTextbox.sendKeys(searchItem);
 
 		//Click on search
-		WebElement searchIcon = driver.findElement(By.cssSelector("button[class='L0Z3Pu']"));
+		WebElement searchIcon = DriverManager.getDriver().findElement(By.cssSelector("button[class='L0Z3Pu']"));
 		searchIcon.click();
 
 		//Wait
 		Thread.sleep(2000);
 
 		//Get total items TEXT
-		WebElement totalElements = driver.findElement(By.cssSelector("span[class='_10Ermr']"));
+		WebElement totalElements = DriverManager.getDriver().findElement(By.cssSelector("span[class='_10Ermr']"));
 		System.out.println(totalElements.getText());
 
-		List<WebElement> allTabsContect = driver.findElements(By.cssSelector("div[class='_5THWM1'] > *"));
+		List<WebElement> allTabsContect = DriverManager.getDriver().findElements(By.cssSelector("div[class='_5THWM1'] > *"));
 
 		//Java 8
 		//Click on Tab - 'Price -- Low to High'
@@ -55,7 +58,7 @@ public class SearchTest2 extends BaseTest{
 		//Collect Price in a list
 		List<Integer> priceBeforeSort = new ArrayList<>();
 
-		driver.findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"))
+		DriverManager.getDriver().findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"))
 		.stream().map(e -> e.getText())
 		//.forEach(t -> System.out.println(t));
 		.forEach(a -> {
