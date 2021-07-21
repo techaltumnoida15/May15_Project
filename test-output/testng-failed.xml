@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.assignment.project.GetMobilenumberFlipkart">
+      <class name="baesystems11g.RFSearchTest">
         <methods>
-          <include name="moblieprice"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
+          <include name="pagecheck"/>
         </methods>
-      </class> <!-- org.assignment.project.GetMobilenumberFlipkart -->
+      </class> <!-- baesystems11g.RFSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

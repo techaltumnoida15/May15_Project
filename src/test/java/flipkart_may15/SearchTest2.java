@@ -22,7 +22,7 @@ public class SearchTest2 extends BaseTest{
 		System.out.println("I am p1");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(4000);
-
+   
 		//Close Popup
 		driver.findElement(By.cssSelector("button[class='_2KpZ6l _2doB4z']")).click();
 
