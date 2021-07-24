@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
@@ -25,12 +26,12 @@ public class BaseTest {
 	protected WebDriver driver;
 	//List<String> myList;
 
-	//@Parameters({"browserName", "osName"})
+	@Parameters({"browserName", "osName"})
 	@BeforeMethod
 	//public void openBrowser(String browserName, String osName) throws Exception {
 		public void openBrowser() throws Exception {
-		String browserName = "CHROME";
-		
+		String browserName = "Chrome";
+
 		//if(osName.equalsIgnoreCase("mac")) {
 			//Safari
 		//}
@@ -53,6 +54,12 @@ public class BaseTest {
 				//Open IE
 				WebDriverManager.iedriver().setup();
 				driver = new InternetExplorerDriver();
+			}
+			
+			else if(browserName.equalsIgnoreCase("edge")) {
+				//Open Edge
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver();
 			}
 			else {
 				throw new Exception("This browser is not mention.");
@@ -78,7 +85,7 @@ public class BaseTest {
 		 */
 		
 		
-		//driver.quit();
+		driver.quit();
 	}
 }
   

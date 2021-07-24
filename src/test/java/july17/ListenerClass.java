@@ -49,6 +49,7 @@ public class ListenerClass implements ITestListener{
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
+		System.out.println(result.getMethod().getMethodName()+ "skipped");
 		
 	}
 
