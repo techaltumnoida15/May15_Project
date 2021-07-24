@@ -18,9 +18,7 @@ import org.testng.annotations.Test;
 public class SnapDeal extends BaseTest {
 
 
-<<<<<<< HEAD
-	public void SdLogin() throws InterruptedException {
-=======
+
 	@Test
 	public void SdLogin() throws InterruptedException {
 
@@ -69,7 +67,7 @@ public class SnapDeal extends BaseTest {
 		System.out.println("Popup Frame selected to Enter mobilEnter number");
 
 		WebElement Mobileinputbox = driver.findElement(By.xpath("//input[@name='username']"));
->>>>>>> 707271e0c858652b0b9f5391a06b72a119eaf1c1
+
 
 		//Assignment 1 - Go to snapdeal.com
 
@@ -79,11 +77,11 @@ public class SnapDeal extends BaseTest {
 
 		// Assignment 2- Find the sign- in locator 
 
-		WebElement signIn = DriverManager.getDriver().findElement(By.xpath("//span[@class='accountUserName col-xs-12 reset-padding']"));
+		//WebElement signIn = DriverManager.getDriver().findElement(By.xpath("//span[@class='accountUserName col-xs-12 reset-padding']"));
 
 		//Assignment 3 -Mouse over on the Sign-in element
 
-		Actions objActions = new Actions (DriverManager.getDriver());
+		//Actions objActions = new Actions (DriverManager.getDriver());
 
 		objActions.moveToElement(signIn);
 
@@ -97,7 +95,7 @@ public class SnapDeal extends BaseTest {
 
 		// Assignment 4- Click on Login
 
-		WebElement loginElement  = DriverManager.getDriver().findElement(By.xpath("//a[text()='login']"));
+		//WebElement loginElement  = DriverManager.getDriver().findElement(By.xpath("//a[text()='login']"));
 		loginElement.click();
 
 		System.out.println("Sign-in clicked");
@@ -113,16 +111,14 @@ public class SnapDeal extends BaseTest {
 
 		System.out.println("Popup Frame selected to Enter mobilEnter number");
 
-		WebElement Mobileinputbox = DriverManager.getDriver().findElement(By.xpath("//input[@name='username']"));
+		//WebElement Mobileinputbox = DriverManager.getDriver().findElement(By.xpath("//input[@name='username']"));
 		Mobileinputbox.sendKeys("8447855711");
 
 		//Click Continue
 
-<<<<<<< HEAD
-		WebElement continueBT = DriverManager.getDriver().findElement(By.xpath("//*[@id='checkUser']"));
-=======
+
 		WebElement continueBT = driver.findElement(By.xpath("//*[@id='checkUser']"));
->>>>>>> 707271e0c858652b0b9f5391a06b72a119eaf1c1
+
 
 		continueBT.click();
 
