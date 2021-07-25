@@ -33,15 +33,7 @@ public class SearchNaukri_Set extends BaseTest{
 		DriverManager.getDriver().switchTo().window(myList.get(1));
 		System.out.println(DriverManager.getDriver().getTitle());
 		
-		DriverManager.getDriver().close();
-		
-		DriverManager.getDriver()
-		Thread.sleep(i)
-		explict
-		
-		
-		
-
+		DriverManager.getDriver().close();			
 		
 	}
 }

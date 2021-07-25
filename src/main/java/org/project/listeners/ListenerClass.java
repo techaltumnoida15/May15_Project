@@ -50,8 +50,12 @@ public class ListenerClass implements ITestListener, ISuiteListener{
 		String screenshotPath = System.getProperty("user.dir") + "\\screenshots\\failTests\\" + testName + "_" + currentDateTime + ".jpeg";
 		File srcScreen = ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 		File destScreen = new File(screenshotPath);
+	
+}
 		
-<<<<<<< HEAD
+	}
+		
+
 		/*
 		if(!result.isSuccess()) {
 			File srcScreen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -99,3 +103,4 @@ public class ListenerClass implements ITestListener, ISuiteListener{
 	}
 
 }
+*/

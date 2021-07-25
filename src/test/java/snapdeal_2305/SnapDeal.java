@@ -1,5 +1,7 @@
 package snapdeal_2305;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -59,7 +61,7 @@ public class SnapDeal extends BaseTest {
 		WebElement frameLogin = DriverManager.getDriver().findElement(By.id("loginIframe"));
 		DriverManager.getDriver().switchTo().frame(frameLogin);
 		
-		Webelements<list> abc =DriverManager.getDriver().findElements(null)
+		List<WebElement> abc = DriverManager.getDriver().findElements(null);
 
 		System.out.println("Popup Frame selected to Enter mobilEnter number");
 
@@ -69,11 +71,8 @@ public class SnapDeal extends BaseTest {
 		//Click Continue
 
 		WebElement continueBT = DriverManager.getDriver().findElement(By.xpath("//*[@id='checkUser']"));
-
 		continueBT.click();
-		DriverManager.getDriver().manage().window().
-
-
+		
 	}
 
 

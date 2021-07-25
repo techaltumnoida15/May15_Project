@@ -1,11 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<<<<<<< HEAD
-<suite name="Selenium UI Test Suite - Amazon" parallel="classes"
-	thread-count="5">
+<suite name="Selenium UI Test Suite - Amazon" parallel="classes" thread-count="5">
 	<listeners>
 
 		<listener class-name="org.project.listeners.ListenerClass"></listener>
+		<listener class-name="org.project.listeners.ReTryTests"></listener>
 
 	</listeners>
 
@@ -14,24 +13,10 @@
 			<class name="flipkart_may15.SearchTest2" />
 			<class name="flipkart_may15.SearchItems_List" />
 			<class name="flipkart_may15.LoginTest" />
-=======
-<suite name="Selenium UI Test Suite - Amazon" parallel="classes" thread-count="5">
-
-	<listeners>
-		<listener class-name="org.project.listeners.ListenerClass"></listener>
-		<listener class-name="org.project.listeners.ReTryTests"></listener>
-	</listeners>
-
-
-	<test name="Grouped Tests">
-		<classes>
-			<!-- <class name="may23.HandleAjaxListTest" />
-			<class name="flipkart_may15.SearchItems_List" />
-			<class name="flipkart_may15.LoginTest" /> -->
 			
-			<class name="flipkart_may15.FSI" />
->>>>>>> e3eedc4685963bd94c5ec4cde26aafb34b81aead
-		</classes>
+			</classes>
+			
+		
 	</test>
 
 </suite>
