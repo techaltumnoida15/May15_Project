@@ -22,13 +22,13 @@ public class COA_RadioButton extends BaseTest{
 		//DriverManager.getDriver().
 		
 		//Check id Round Trip is selected or not
-<<<<<<< HEAD
+
 		
 		
-		Assert.assertTrue(driver.findElement(By.id("roundTrip")).isSelected(), "Round trip is not selected.");
-=======
+	
+
 		Assert.assertTrue(DriverManager.getDriver().findElement(By.id("roundTrip")).isSelected(), "Round trip is not selected.");
->>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
+
 		System.out.println("Round trip is selected.");
 		
 		WebElement RadioOnwayTrip =DriverManager.getDriver().findElement(By.id("onewayTrip"));

@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,16 +19,16 @@ public class Snapdeel extends BaseTest {
 	public  void enterMobileNumber() throws Exception{
 
 		// Open Snapdeal
-		driver.navigate().to("https://www.snapdeal.com/");
+		DriverManager.getDriver().navigate().to("https://www.snapdeal.com/");
 
 		// Hover on SignIn Link
 
-		WebElement SignInLink = driver.findElement(By.xpath("//span[text()='Sign In']"));
+		WebElement SignInLink = DriverManager.getDriver().findElement(By.xpath("//span[text()='Sign In']"));
 
 		Assert.assertTrue(SignInLink.isDisplayed(), "SignIn link is not present");
 		System.out.println("SignIn link is present");
 
-		Actions obj1 = new Actions(driver);
+		Actions obj1 = new Actions(DriverManager.getDriver());
 		obj1.moveToElement(SignInLink);
 		Thread.sleep(3000);
 		obj1.build().perform();
@@ -36,7 +37,7 @@ public class Snapdeel extends BaseTest {
 
 		// Click on login button
 
-		WebElement LoginBtn = driver.findElement(By.xpath(".//a[text()='login']"));
+		WebElement LoginBtn = DriverManager.getDriver().findElement(By.xpath(".//a[text()='login']"));
 		LoginBtn.click();
 		System.out.println("login button clicked");
 		Thread.sleep(5000);
@@ -46,20 +47,20 @@ public class Snapdeel extends BaseTest {
 
 		// count iframe tag
 
-		List<WebElement> Count = driver.findElements(By.tagName("iframe"));
+		List<WebElement> Count = DriverManager.getDriver().findElements(By.tagName("iframe"));
 		System.out.println("total frame on a page "+ Count.size());
 
 		// Verify login page header
 
-		driver.switchTo().frame("loginIframe");
+		DriverManager.getDriver().switchTo().frame("loginIframe");
 
-		WebElement Header = driver.findElement(By.xpath("//div[@class='login-register-common']//header"));
+		WebElement Header = DriverManager.getDriver().findElement(By.xpath("//div[@class='login-register-common']//header"));
 		Assert.assertTrue(Header.isDisplayed(), "Login popup is not opened");
 		System.out.println("Enter your mobile number to login Ssanpdeal");
 
 		String ActualHeaderMessage = "Please provide your Mobile Number or Email to Login/ Sign Up on Snapdeal";
 
-		WebElement HeaderMessage = driver.findElement(By.xpath("//div[@class='login-register-common']//p"));
+		WebElement HeaderMessage = DriverManager.getDriver().findElement(By.xpath("//div[@class='login-register-common']//p"));
 		String MessageOnScreen = HeaderMessage.getText();
 
 		if (ActualHeaderMessage.equals(MessageOnScreen))
@@ -77,15 +78,15 @@ public class Snapdeel extends BaseTest {
 
 		// Enter mobile number or Email
 
-		WebElement MobilNumber_Email = driver.findElement(By.xpath(".//input[@placeholder= 'Mobile Number/ Email']"));
+		WebElement MobilNumber_Email = DriverManager.getDriver().findElement(By.xpath(".//input[@placeholder= 'Mobile Number/ Email']"));
 		MobilNumber_Email.sendKeys("mittal.sahil2010@gmail.com");
 
 		// Click on Continue button
 
-		WebElement Login_Continue = driver.findElement(By.xpath("//div[@class='login-register-common']//button[text()='continue']"));
+		WebElement Login_Continue = DriverManager.getDriver().findElement(By.xpath("//div[@class='login-register-common']//button[text()='continue']"));
 		Login_Continue.click();
 
-		driver.switchTo().defaultContent();
+		DriverManager.getDriver().switchTo().defaultContent();
 	}		 
 
 

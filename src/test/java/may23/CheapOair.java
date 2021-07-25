@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
@@ -14,12 +15,12 @@ public class CheapOair extends BaseTest {
 	@Test
 	
  public void fromWhere() throws Exception{
-	 driver.navigate().to("https://www.cheapoair.com/");
+		DriverManager.getDriver().navigate().to("https://www.cheapoair.com/");
 	 Thread.sleep(3000);
 
 	 //clear the suggestion text
 	 
-	 WebElement clearText =driver.findElement(By.xpath("//a[@class='suggestion-box__clear icon']"));
+	 WebElement clearText =DriverManager.getDriver().findElement(By.xpath("//a[@class='suggestion-box__clear icon']"));
 	 Assert.assertTrue(clearText.isDisplayed(), "suggestion is not present");
 	 System.out.println("Clear the suggestion first then proceed");
 	 clearText.click();
@@ -28,7 +29,7 @@ public class CheapOair extends BaseTest {
 	 
 	 // Enter the Text in search From
 	 
-	WebElement FromTextBox = driver.findElement(By.xpath("//input[@aria-describedby='from0autoSuggestLabel']"));
+	WebElement FromTextBox = DriverManager.getDriver().findElement(By.xpath("//input[@aria-describedby='from0autoSuggestLabel']"));
 	FromTextBox.click();
 	System.out.println("focus is on From Text box");
 	FromTextBox.sendKeys("Bos");
@@ -38,7 +39,7 @@ public class CheapOair extends BaseTest {
 	
 	String Expected = "BOS - Boston Logan, Massachusetts, United States";
 	
-	 List<WebElement> SuggestionList = driver.findElement(By.xpath("//div[@class='suggestion-box__content air is-visible']")).findElements(By.tagName("li"));
+	 List<WebElement> SuggestionList = DriverManager.getDriver().findElement(By.xpath("//div[@class='suggestion-box__content air is-visible']")).findElements(By.tagName("li"));
 	
 	System.out.println("No of suggestions present " + SuggestionList.size());
 	
@@ -56,10 +57,10 @@ public class CheapOair extends BaseTest {
 				}
 	
 	//Hover login link
-	 WebElement SignLink = driver.findElement(By.xpath("//a[@title='Sign In']"));
+	 WebElement SignLink = DriverManager.getDriver().findElement(By.xpath("//a[@title='Sign In']"));
 	 
 	// create a object of actions class
-	 Actions obj = new Actions(driver);
+	 Actions obj = new Actions(DriverManager.getDriver());
 	 obj.moveToElement(SignLink);
 	 
 	 //build and perform

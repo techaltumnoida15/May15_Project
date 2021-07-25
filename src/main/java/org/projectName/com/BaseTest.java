@@ -5,11 +5,12 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
+	
+	/*
 	//@Parameters({"browserName", "osName"})
 	@BeforeMethod
-<<<<<<< HEAD
-	public void openBrowser(String browserName, String osName) throws Exception {
-		//String browserName = "CHROME";
+	public void openBrowser() throws Exception {
+	String browserName = "CHROME";
 		
 
 		if(browserName.equalsIgnoreCase("chrome")) {
@@ -65,10 +66,12 @@ public class BaseTest {
 
 
 		//driver.get("https://www.facebook.com/login.php");
-=======
+		 * 
+		 * 
+		 */
+	@BeforeMethod
 	public void openBrowser() throws Exception {
 		Driver.initDriver();
->>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
 
 	}
 

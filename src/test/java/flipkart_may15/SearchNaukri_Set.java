@@ -35,6 +35,14 @@ public class SearchNaukri_Set extends BaseTest{
 		
 		DriverManager.getDriver().close();
 		
+		DriverManager.getDriver()
+		Thread.sleep(i)
+		explict
+		
+		
+		
+
+		
 	}
 }
 

@@ -1,19 +1,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-  
-<suite name="Selenium UI Test Suite - Amazon"  parallel="classes" thread-count="5" >
-<listeners>
 
-<listener class-name="org.project.listeners.ListenerClass"></listener>
-    
-</listeners>    
-  
-    <test name="Grouped Tests" >
-    <classes>
-       <class name="flipkart_may15.SearchTest2" />
-       <class name="flipkart_may15.SearchItems_List" />
-       <class name="flipkart_may15.LoginTest" />
-    </classes>
-  	</test>
-    
- </suite>
+<suite name="Selenium UI Test Suite - Amazon" parallel="classes"
+	thread-count="5">
+	<listeners>
+
+		<listener class-name="org.project.listeners.ListenerClass"></listener>
+
+	</listeners>
+
+	<test name="Grouped Tests">
+		<classes>
+			<class name="flipkart_may15.SearchTest2" />
+			<class name="flipkart_may15.SearchItems_List" />
+			<class name="flipkart_may15.LoginTest" />
+		</classes>
+	</test>
+
+</suite>
   

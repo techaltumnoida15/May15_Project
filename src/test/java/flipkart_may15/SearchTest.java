@@ -19,13 +19,10 @@ public class SearchTest extends BaseTest{
 		//Close Popup
 		DriverManager.getDriver().findElement(By.cssSelector("button[class='_2KpZ6l _2doB4z']")).click();
 
-<<<<<<< HEAD
-		//List<WebElement> myList = driver.findElements(By.id("abc"));
 
-=======
+
+
 		//List<WebElement> myList = DriverManager.getDriver().findElements(By.id("abc"));
-		
->>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
 		//Search items
 		String searchItem = "mobiles";
 		WebElement searchTextbox = DriverManager.getDriver().findElement(By.name("q"));
@@ -42,21 +39,21 @@ public class SearchTest extends BaseTest{
 		WebElement totalElements = DriverManager.getDriver().findElement(By.cssSelector("span[class='_10Ermr']"));
 		System.out.println(totalElements.getText());
 
-<<<<<<< HEAD
+
 		//driver.findElement(By.cssSelector("div[class='_5THWM1'] > div:nth-child(4)")).click();
 
 		//driver.findElement(By.cssSelector("div[class='_5THWM1']")).findElements(By.tagName("span")) 
 
-		List<WebElement> allTabsContect = driver.findElements(By.cssSelector("div[class='_5THWM1'] > *"));
+		
 
-=======
+
 		//DriverManager.getDriver().findElement(By.cssSelector("div[class='_5THWM1'] > div:nth-child(4)")).click();
 		
 		//DriverManager.getDriver().findElement(By.cssSelector("div[class='_5THWM1']")).findElements(By.tagName("span")) 
 		
 		List<WebElement> allTabsContect = DriverManager.getDriver().findElements(By.cssSelector("div[class='_5THWM1'] > *"));
 		
->>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
+
 		for(int i = 0; i< allTabsContect.size(); i++) {
 			String tabText = allTabsContect.get(i).getText();
 			if(tabText.equalsIgnoreCase("Price -- Low to High")) {
@@ -68,13 +65,12 @@ public class SearchTest extends BaseTest{
 		Thread.sleep(3000);
 		//Extract price of all items of 1 first page
 		List<String> allPrice = new ArrayList<>();
-<<<<<<< HEAD
-		List<WebElement> allItemsPriceList = driver.findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"));
 
-=======
+
+
 		List<WebElement> allItemsPriceList = DriverManager.getDriver().findElements(By.cssSelector("div[class='_30jeq3 _1_WHN1']"));
 		
->>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
+
 		for(int j = 0; j<allItemsPriceList.size(); j++) {
 			String s = allItemsPriceList.get(j).getText();
 			String ItemPrice = s.substring(1, s.length());

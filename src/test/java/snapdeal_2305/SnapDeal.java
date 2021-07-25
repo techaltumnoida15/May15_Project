@@ -23,15 +23,7 @@ public class SnapDeal extends BaseTest {
 
 		//Assignment 1 - Go to snapdeal.com
 
-<<<<<<< HEAD
-		driver.navigate().to("https://www.snapdeal.com/");
-		
-		
-=======
 		DriverManager.getDriver().navigate().to("https://www.snapdeal.com/");
->>>>>>> e51828fb0be3d377f619d3b324fe7f7d8708a450
-
-
 
 		// Assignment 2- Find the sign- in locator 
 
@@ -66,6 +58,8 @@ public class SnapDeal extends BaseTest {
 		//DriverManager.getDriver().switchTo().frame(Mobileinputbox);
 		WebElement frameLogin = DriverManager.getDriver().findElement(By.id("loginIframe"));
 		DriverManager.getDriver().switchTo().frame(frameLogin);
+		
+		Webelements<list> abc =DriverManager.getDriver().findElements(null)
 
 		System.out.println("Popup Frame selected to Enter mobilEnter number");
 
@@ -77,6 +71,7 @@ public class SnapDeal extends BaseTest {
 		WebElement continueBT = DriverManager.getDriver().findElement(By.xpath("//*[@id='checkUser']"));
 
 		continueBT.click();
+		DriverManager.getDriver().manage().window().
 
 
 	}
