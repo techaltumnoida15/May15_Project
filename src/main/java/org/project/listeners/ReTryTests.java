@@ -4,17 +4,15 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestNGListener;
 import org.testng.ITestResult;
 
-public class ReTryTests implements IRetryAnalyzer, ITestNGListener{
+public class ReTryTests implements IRetryAnalyzer{
 
+	int count = 0;
+	int maxRetryCount = 1;
+	
 	@Override
 	public boolean retry(ITestResult result) {
-		int count = 0;
-		int maxRetryCount = 2;
-		
 		if(count < maxRetryCount) {
-			System.out.println("Count before ++ => " + count);
 			count++;
-			System.out.println("Count before ++ => " + count + ", Returning true.");
 			return true;
 		}
 		else {

@@ -16,24 +16,30 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.project.report.ExtentReport;
+
 public class ListenerClass implements ITestListener, ISuiteListener{
+	
+	private String currentDateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy_hh_mm_ss"));
 	
 	@Override
 	public void onStart(ISuite suite) {
-		//Code
+		ExtentReport.initReport();
 	}
 
 	@Override
 	public void onFinish(ISuite suite) {
-		//Code
+		try {
+			ExtentReport.tearDownReport();
+		} catch (IOException e) {}
 	}
-
-	private String currentDateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy_hh_mm_ss"));
 
 	@Override
 	public void onTestStart(ITestResult result) {
+		try {
+			ExtentReport.createTests(result.getMethod().getMethodName());
+		} catch (IOException e) {}
 		
-		System.out.println(result.getMethod().getMethodName() + " starting.");
 	}
 
 	@Override

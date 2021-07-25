@@ -7,12 +7,16 @@ import org.projectName.com.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.project.report.ExtentReport;
+
 
 public class FSI extends BaseTest{
 	@Test
 	public void webapp() throws Exception{
 		// navigate to FSI portal
 		//DriverManager.getDriver().get("https://portal.dreamscapetest.com/TestAutomationCodeMerge/Account/Login/");
+				
 		DriverManager.getDriver().get("http://www.google.com");
 		// wait for some time
 		

@@ -27,11 +27,11 @@ public final class Driver {
 				//Open Chrome
 				WebDriverManager.chromedriver().setup();
 
-				//ChromeOptions chromeOptions = new ChromeOptions();
-				//chromeOptions.setHeadless(true);
+				ChromeOptions chromeOptions = new ChromeOptions();
+				chromeOptions.setHeadless(true);
 
-				//driver = new ChromeDriver(chromeOptions);
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(chromeOptions);
+				//driver = new ChromeDriver();
 			}
 			else if(browserName.equalsIgnoreCase("firefox")) {
 				//Open FF
