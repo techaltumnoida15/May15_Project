@@ -3,6 +3,7 @@ package flipkart_may15;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.projectName.com.BaseTest;
@@ -12,23 +13,24 @@ import org.testng.annotations.CustomAttribute;
 import org.testng.annotations.Test;
 
 public class FaceBook_NewAccountTest extends BaseTest {
+	WebDriver driver;
 
 	@Test
 	public void facebookNewAccountTest() throws Exception {
-<<<<<<< HEAD
+
 		// Launch FB
 		driver.get("https://www.facebook.com/");
 
 		// Click on New Account
 		WebElement createAccount = driver.findElement(By.xpath("(//div[@class='_6ltg'])[2]/a"));// u_0_2_X0
-=======
+
 		//Launch FB
 		DriverManager.getDriver().get("https://www.facebook.com/");
 		
 		
 		//Click on New Account
-		WebElement createAccount = DriverManager.getDriver().findElement(By.xpath("(//div[@class='_6ltg'])[2]/a"));//u_0_2_X0
->>>>>>> 69bcb248c7f0fd263bb9b5c49112cef2ad3a6384
+		WebElement createAccount1 = DriverManager.getDriver().findElement(By.xpath("(//div[@class='_6ltg'])[2]/a"));//u_0_2_X0
+
 		Assert.assertTrue(createAccount.isEnabled(), "Create account button is not enable");
 
 		System.out.println("Create account button is enable");
@@ -36,12 +38,12 @@ public class FaceBook_NewAccountTest extends BaseTest {
 		// driver.findElement(By.id("u_0_2_fS")).click();
 
 		System.out.println("Create account button is enable");		
-<<<<<<< HEAD
+
 		//driver.findElement(By.id("u_0_2_fS")).click();
 
-=======
+
 		//DriverManager.getDriver().findElement(By.id("u_0_2_fS")).click();
->>>>>>> 69bcb248c7f0fd263bb9b5c49112cef2ad3a6384
+
 		createAccount.click();
 		System.out.println("Click on Create New Account");
 
@@ -63,12 +65,14 @@ public class FaceBook_NewAccountTest extends BaseTest {
 		 * 
 		 */
 		Thread.sleep(2000);
-<<<<<<< HEAD
+
 
 		// Day
-		WebElement dayDropdown = driver.findElement(By.id("day"));
+		WebElement dayDropdown;
+		dayDropdown= driver.findElement(By.id("day"));
 
-		Select selectDay = new Select(dayDropdown);
+		Select selectDay;
+		selectDay	= new Select(dayDropdown);
 		selectDay.selectByIndex(4);
 
 		// Month
@@ -76,26 +80,25 @@ public class FaceBook_NewAccountTest extends BaseTest {
 		Select selectMonth = new Select(montDropdown);
 		selectMonth.selectByValue("4");
 
-		// Year
-		WebElement yearDropdown = driver.findElement(By.id("year"));
-=======
-		
-		//Day
-		WebElement dayDropdown = DriverManager.getDriver().findElement(By.id("day"));
-		
-		Select selectDay = new Select(dayDropdown);
-		selectDay.selectByIndex(4);
-		
-		//Month
-		WebElement montDropdown = DriverManager.getDriver().findElement(By.id("month"));
-		Select selectMonth = new Select(montDropdown);
-		selectMonth.selectByValue("4");
-		
-		//Year
-		WebElement yearDropdown = DriverManager.getDriver().findElement(By.id("year"));
->>>>>>> 69bcb248c7f0fd263bb9b5c49112cef2ad3a6384
-		Select selectYear = new Select(yearDropdown);
-		selectYear.selectByVisibleText("1905");
+		/*
+		 * // Year WebElement yearDropdown = driver.findElement(By.id("year"));
+		 * 
+		 * 
+		 * //Day WebElement dayDropdown =
+		 * DriverManager.getDriver().findElement(By.id("day"));
+		 * 
+		 * Select selectDay = new Select(dayDropdown); selectDay.selectByIndex(4);
+		 * 
+		 * //Month WebElement montDropdown =
+		 * DriverManager.getDriver().findElement(By.id("month")); Select selectMonth =
+		 * new Select(montDropdown); selectMonth.selectByValue("4");
+		 * 
+		 * //Year WebElement yearDropdown =
+		 * DriverManager.getDriver().findElement(By.id("year"));
+		 * 
+		 * Select selectYear = new Select(yearDropdown);
+		 * selectYear.selectByVisibleText("1905");
+		 */
 
 
 		// Assignment

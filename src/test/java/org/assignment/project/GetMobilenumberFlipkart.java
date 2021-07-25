@@ -1,12 +1,14 @@
 package org.assignment.project;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.projectName.com.BaseTest;
 import org.testng.annotations.Test;
 
 public class GetMobilenumberFlipkart extends BaseTest
 {
+	WebDriver driver;
 	@Test
 	public void moblieprice() throws InterruptedException
 	{

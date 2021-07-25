@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class Snapdeal extends BaseTest
 
 {
-
+	WebDriver driver;
 	@Test
 	public void Snapdeallogin() throws InterruptedException {
 
