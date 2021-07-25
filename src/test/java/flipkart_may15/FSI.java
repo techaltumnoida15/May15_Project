@@ -12,8 +12,13 @@ public class FSI extends BaseTest{
 	@Test
 	public void webapp() throws Exception{
 		// navigate to FSI portal
-		DriverManager.getDriver().get("https://portal.dreamscapetest.com/TestAutomationCodeMerge/Account/Login/");
+		//DriverManager.getDriver().get("https://portal.dreamscapetest.com/TestAutomationCodeMerge/Account/Login/");
+		DriverManager.getDriver().get("http://www.google.com");
 		// wait for some time
+		
+		//Make test fail
+		Assert.assertTrue(false);
+		
 		Thread.sleep(5000);
 		
 		//check the existence of UserName field

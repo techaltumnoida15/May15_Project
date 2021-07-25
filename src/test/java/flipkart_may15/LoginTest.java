@@ -9,10 +9,12 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest{
 
-	@Test()
+	@Test
 	public void loginTest() throws Exception {
 		DriverManager.getDriver().get("http://www.flipkart.com");
-		System.out.println("I am P0");
+		System.out.println("I am in LoginTest");
+		Assert.assertTrue(false);
+		
 		//Wait 
 		Thread.sleep(3000);
 

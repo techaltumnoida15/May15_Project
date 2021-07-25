@@ -1,4 +1,4 @@
-package org.project.listeners;
+package july17;
 
 
 import java.io.File;
@@ -10,24 +10,12 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.projectName.com.DriverManager;
-import org.testng.ISuite;
-import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenerClass implements ITestListener, ISuiteListener{
+public class ListenerClass implements ITestListener{
 	
-	@Override
-	public void onStart(ISuite suite) {
-		//Code
-	}
-
-	@Override
-	public void onFinish(ISuite suite) {
-		//Code
-	}
-
 	private String currentDateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy_hh_mm_ss"));
 
 	@Override
@@ -51,28 +39,10 @@ public class ListenerClass implements ITestListener, ISuiteListener{
 		File srcScreen = ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 		File destScreen = new File(screenshotPath);
 		
-<<<<<<< HEAD
-		/*
-		if(!result.isSuccess()) {
-			File srcScreen = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			
-			String screenshotPathAndName = System.getProperty("user.dir") + "\\Screenshots\\" +result.getMethod().getMethodName() +  ".jpeg";
-			
-			File destFile = new File(screenshotPathAndName);
-			
-			try {
-				FileUtils.moveFile(srcScreen, destFile);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-		
-=======
 		try {
 			FileUtils.moveFile(srcScreen, destScreen);
 		} catch (IOException e) {
 			e.printStackTrace();
->>>>>>> e3eedc4685963bd94c5ec4cde26aafb34b81aead
 		}
 		
 	}

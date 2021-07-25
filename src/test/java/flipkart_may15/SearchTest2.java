@@ -12,17 +12,22 @@ import org.projectName.com.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import july17.PropertyFile;
+
 public class SearchTest2 extends BaseTest{
 
-	@Test(priority = 1)
+	@Test
 	public void searchTest() throws Exception {
-		DriverManager.getDriver().get("http://www.flipkart.com");
+		//PropertyFile p1 = new PropertyFile();
+		//String url = p1.getData("url");
+		
+		DriverManager.getDriver().get(PropertyFile.getData("url"));
 		System.out.println("I am p1");
 		DriverManager.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(4000);
 
 		//Close Popup
-		DriverManager.getDriver().findElement(By.cssSelector("button[class='_2KpZ6l _2doB4z']")).click();
+		DriverManager.getDriver().findElement(By.cssSelector(PropertyFile.getData("cssClosePopup"))).click();
 
 		//Search items
 		String searchItem = "mobiles";
