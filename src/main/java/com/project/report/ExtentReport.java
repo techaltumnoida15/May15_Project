@@ -34,6 +34,7 @@ public final class ExtentReport {
 			spark.config().setTheme(Theme.DARK);
 			spark.config().setDocumentTitle("Selenium Automation Report");
 			spark.config().setReportName("ProjectName UI Test Automation");
+			//spark.config().
 		}
 	}
 

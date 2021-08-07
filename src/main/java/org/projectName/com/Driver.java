@@ -51,6 +51,7 @@ public final class Driver {
 		DriverManager.setWebDriver(driver);
 		//DriverManager.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().get("http://www.cheapoair.com");
 		
 	}
 

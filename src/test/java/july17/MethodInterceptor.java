@@ -23,6 +23,10 @@ public class MethodInterceptor implements IMethodInterceptor{
 				
 				for(int j = 0; j<testDetails.size(); j++) {
 					
+					String a = methods.get(i).getMethod().getMethodName();
+					String b = testDetails.get(j).get("TestName");
+					String c = testDetails.get(j).get("ToRun");
+					
 					if(methods.get(i).getMethod().getMethodName().equalsIgnoreCase(testDetails.get(j).get("TestName"))
 							&& testDetails.get(j).get("ToRun").equalsIgnoreCase("Y")) {
 						
