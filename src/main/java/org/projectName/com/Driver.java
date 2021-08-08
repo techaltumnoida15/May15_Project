@@ -1,10 +1,7 @@
 package org.projectName.com;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -17,7 +14,7 @@ public final class Driver {
 	private static WebDriver driver;
 
 	public static void initDriver() throws Exception {
-		String browserName = "CHROME";
+		String browserName = "chrome";
 		String osName = "WINS";
 
 		if(DriverManager.getDriver() == null) {
@@ -27,11 +24,11 @@ public final class Driver {
 				//Open Chrome
 				WebDriverManager.chromedriver().setup();
 
-				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.setHeadless(true);
+				//ChromeOptions chromeOptions = new ChromeOptions();
+				//chromeOptions.setHeadless(true);
 
-				driver = new ChromeDriver(chromeOptions);
-				//driver = new ChromeDriver();
+				//driver = new ChromeDriver(chromeOptions);
+				driver = new ChromeDriver();
 			}
 			else if(browserName.equalsIgnoreCase("firefox")) {
 				//Open FF
