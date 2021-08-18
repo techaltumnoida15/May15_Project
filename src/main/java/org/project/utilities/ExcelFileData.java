@@ -14,13 +14,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public final class ExcelFileData {
 	private ExcelFileData() {}
 	
-	public static List<Map<String, String>> readData() throws Exception {
+	public static List<Map<String, String>> readData(int index) throws Exception {
 		FileInputStream fip = new FileInputStream(new File(System.getProperty("user.dir") + "//resources//testData.xlsx"));
 		
 		//Use POI
 		//** file extension -> .xls [HSSF...] OR file extension -> .xlsx [XSSF...]
 		XSSFWorkbook wb = new XSSFWorkbook(fip);
-		XSSFSheet sheet = wb.getSheetAt(0);
+		XSSFSheet sheet = wb.getSheetAt(index);
 		
 		//Get Rows
 		int xRows = sheet.getLastRowNum() + 1;

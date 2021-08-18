@@ -1,10 +1,7 @@
 package org.projectName.com;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -17,7 +14,7 @@ public final class Driver {
 	private static WebDriver driver;
 
 	public static void initDriver() throws Exception {
-		String browserName = "CHROME";
+		String browserName = "chrome";
 		String osName = "WINS";
 
 		if(DriverManager.getDriver() == null) {
@@ -51,6 +48,7 @@ public final class Driver {
 		DriverManager.setWebDriver(driver);
 		//DriverManager.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().get("http://www.cheapoair.com");
 		
 	}
 

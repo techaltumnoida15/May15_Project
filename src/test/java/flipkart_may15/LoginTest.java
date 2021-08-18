@@ -7,14 +7,19 @@ import org.projectName.com.DriverManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.project.report.ExtentReport;
+
 public class LoginTest extends BaseTest{
 
 	@Test
 	public void loginTest() throws Exception {
+
+		
 		DriverManager.getDriver().get("http://www.flipkart.com");
 		System.out.println("I am in LoginTest");
 		Assert.assertTrue(false);
-		
+
 		//Wait 
 		Thread.sleep(3000);
 
@@ -25,18 +30,18 @@ public class LoginTest extends BaseTest{
 		} catch (Exception e) {
 			System.out.println("Login poup is not found.");
 		}
-		
-		
-		
+
+
+
 		//check/verify that login button is displayed/enable
 		WebElement loginButton = DriverManager.getDriver().findElement(By.xpath("//a[text()='Login']"));
-		
+
 		/*
 		 * Boolean isDisplayed = loginButton.isDisplayed();
 		 * 
 		 * if(isDisplayed) { //Do some operations }
 		 */
-		
+
 		/*
 		 * if(loginButton.isDisplayed()) {
 		 * System.out.println("Login button is displayed");
@@ -45,19 +50,19 @@ public class LoginTest extends BaseTest{
 		 * 
 		 * loginButton.click(); System.out.println("Click on Login Button."); } }
 		 */
-		
+
 		//Assertions - Verification / Validations
-		
+
 		//Assert.assertEquals(4, 5);
-		
+
 		//Assert.assertTrue(false, "Hello");
-		
+
 		Assert.assertTrue(loginButton.isDisplayed(), "Login button is not displayed.");
 		System.out.println("Login button is displayed.");
-		
+
 		Assert.assertTrue(false);
-		
-		
+
+
 	}
 
 	/*
