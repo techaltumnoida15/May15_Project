@@ -20,6 +20,7 @@
   </test> <!-- BAE 12c Run -->
   
   <test thread-count="5" name="BAE 12c Run Edge">
+  
      <parameter name ="browserName" value="edge"></parameter>
   
     <classes>
