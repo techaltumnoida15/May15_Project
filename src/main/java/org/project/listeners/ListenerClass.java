@@ -16,6 +16,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.project.constants.FrameworkConstants;
 import com.project.report.ExtentReport;
 
 public class ListenerClass implements ITestListener, ISuiteListener{
@@ -53,7 +54,9 @@ public class ListenerClass implements ITestListener, ISuiteListener{
 		String testName = result.getMethod().getMethodName();
 		System.out.println(testName + " Fail.");
 		
-		String screenshotPath = System.getProperty("user.dir") + "\\screenshots\\failTests\\" + testName + "_" + currentDateTime + ".jpeg";
+		//String screenshotPath = System.getProperty("user.dir") + "\\screenshots\\failTests\\" + testName + "_" + currentDateTime + ".jpeg";
+		String screenshotPath = FrameworkConstants.getScreenshotPath() + testName + "_" + currentDateTime + ".jpeg";
+		
 		File srcScreen = ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
 		File destScreen = new File(screenshotPath);
 		

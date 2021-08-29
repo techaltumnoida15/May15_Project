@@ -14,6 +14,7 @@ public class RoundTripSearchTest extends BaseTest{
 		.waitForHomePageLoad()
 		.enterFrom("NYC")
 		.enterTo("LAS")
+		.selectDate(10)
 		.clickOnSearch();
 		
 	}

@@ -18,12 +18,6 @@ public final class ExtentReport {
 
 	public static void initReport() {
 
-		/*
-		 * if(extent == null) {
-		 * 
-		 * }
-		 */
-
 		if(Objects.isNull(extent)) {
 			extent = new ExtentReports();
 			ExtentSparkReporter spark = new ExtentSparkReporter("index.html");

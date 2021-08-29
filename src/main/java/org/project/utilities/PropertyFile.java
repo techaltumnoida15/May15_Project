@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import com.project.constants.FrameworkConstants;
+
 public final class PropertyFile {
 	
 	private PropertyFile(){}
@@ -11,7 +13,7 @@ public final class PropertyFile {
 	public static String getData(String key) throws Exception {
 
 		Properties prop = new Properties();
-		prop.load(new FileInputStream(new File(System.getProperty("user.dir") + "\\resources\\data.properties")));
+		prop.load(new FileInputStream(new File(FrameworkConstants.getPropertyfilepath())));
 		
 		//Read Data - Risk=> if key is null in property file - > Handle that
 		String value = prop.getProperty(key);

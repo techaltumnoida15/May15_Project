@@ -37,7 +37,7 @@ public class ClassA9 {
 		String[] arr1 = {"amit", "surbhi", "vijay", "ajay"};
 
 		List<String> l1 = Arrays.asList(arr1);
-		System.out.println(l1);
+		System.out.println("l1 is => " + l1);
 
 		//Collections.reverse(l1);
 		//System.out.println(l1);
@@ -45,7 +45,8 @@ public class ClassA9 {
 		List<String> l2 = l1.stream()
 				.map(x -> new StringBuilder(x).reverse().toString())
 				.collect(Collectors.toList());
-		System.out.println(l2);
+		
+		System.out.println("l2 is => " + l2);
 		
 		//=================================
 		
