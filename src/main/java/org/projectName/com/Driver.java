@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.project.enums.Browser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,7 +21,8 @@ public final class Driver {
 		if(DriverManager.getDriver() == null) {
 
 			//Wins
-			if(browserName.equalsIgnoreCase("chrome")) {
+			//if(browserName.equalsIgnoreCase("chrome")) {
+			if(browserName.equalsIgnoreCase(Browser.CHROME.name())) {
 				//Open Chrome
 				WebDriverManager.chromedriver().setup();
 

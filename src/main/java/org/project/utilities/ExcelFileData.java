@@ -11,11 +11,13 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.project.constants.FrameworkConstants;
+
 public final class ExcelFileData {
 	private ExcelFileData() {}
 	
 	public static List<Map<String, String>> readData(int index) throws Exception {
-		FileInputStream fip = new FileInputStream(new File(System.getProperty("user.dir") + "//resources//testData.xlsx"));
+		FileInputStream fip = new FileInputStream(new File(FrameworkConstants.getExcelpath()));
 		
 		//Use POI
 		//** file extension -> .xls [HSSF...] OR file extension -> .xlsx [XSSF...]

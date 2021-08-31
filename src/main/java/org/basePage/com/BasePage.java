@@ -2,27 +2,33 @@ package org.basePage.com;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.project.enums.WaitStrategy;
+import org.projectFactories.com.ExplicitWaitFactory;
 import org.projectName.com.DriverManager;
 
 import com.project.report.Logger;
 
 public class BasePage {   //common methods
 
-	protected void type(By locator, String value) {
-		DriverManager.getDriver().findElement(locator).sendKeys(value);
-		Logger.info(value + " is typed.");
+	protected void type(By locator, String value, String elName, WaitStrategy wst) {
+		WebElement element = ExplicitWaitFactory.performExplicitWait(wst, locator);
+		element.sendKeys(value);
+		Logger.info("'" + value + "' is type in element '" + elName + "'.");
 	}
 	
-	protected void clickOn(By locator) {
-		DriverManager.getDriver().findElement(locator).click();
-		Logger.info("Clicked.");
+	protected void clickOn(By locator, String elName, WaitStrategy wst) {
+		WebElement element = ExplicitWaitFactory.performExplicitWait(wst, locator);
+		element.click();
+		Logger.info("Click on '" + elName + "'.");
 	}
 	
-	protected void waitForElementToBeVisible(By locator) {
-		new WebDriverWait(DriverManager.getDriver(), 10)
-		.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	protected String getElementText(By locator, String elName, WaitStrategy wst) {
+		WebElement element = ExplicitWaitFactory.performExplicitWait(wst, locator);
+		Logger.info("Text of '" + elName + "' is = '" + element.getText() + "'.");
+		return element.getText();
 	}
 	
 	protected void containsTextInAttribute(By locator, String attribute, String value) {
