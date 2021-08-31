@@ -13,7 +13,7 @@ public class RFSearchTest extends BaseTest {
 
 		/* Verify user is on desired site */
 		
-		driver.get("http://dev.dotcom.baesystems.com/en/home");
+		DriverManager.getDriver().get("http://dev.dotcom.baesystems.com/en/home");
 
 
 		String pageTitle = DriverManager.getDriver().getTitle();

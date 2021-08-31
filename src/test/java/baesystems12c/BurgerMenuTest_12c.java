@@ -1,9 +1,11 @@
 package baesystems12c;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 public class BurgerMenuTest_12c extends BaseTest {
@@ -13,14 +15,15 @@ public class BurgerMenuTest_12c extends BaseTest {
 	
 		// Navigate to the URL
 		
-		driver.navigate().to("http://baesystems.com/en/home");
+		DriverManager.getDriver().navigate().to("http://baesystems.com/en/home");
 		
 		// Find burger Menu Element
 		
-		WebElement bMElement =  driver.findElement(By.xpath("//a[@class='top-level-navigation-link disable']"));
+		WebElement bMElement =  DriverManager.getDriver().findElement(By.xpath("//a[@class='top-level-navigation-link disable']"));
 		
 		//Mouse over on the Burger Menu
 		
+		WebDriver driver = null;
 		Actions objActions = new Actions(driver);
 		objActions.moveToElement(bMElement);
 		
@@ -31,7 +34,7 @@ public class BurgerMenuTest_12c extends BaseTest {
 		
 		//Find the first level navigation item 'Our Company
 		
-		WebElement ourCompany = driver.findElement(By.xpath("//span[text()='Our Company']"));
+		WebElement ourCompany = DriverManager.getDriver().findElement(By.xpath("//span[text()='Our Company']"));
 		
 		// Mouse over on Our company 
 		
@@ -53,13 +56,13 @@ public class BurgerMenuTest_12c extends BaseTest {
 		//fetch and print the Destination page URL
 		
 		
-		String DestinationURL = driver.getCurrentUrl();
+		String DestinationURL = DriverManager.getDriver().getCurrentUrl();
 		
 		
 		System.out.println(DestinationURL);
 			
 		
-		//driver.navigate().back();
+		//DriverManager.getDriver().navigate().back();
 
 		
 		

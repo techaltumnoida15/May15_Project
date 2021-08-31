@@ -1,6 +1,7 @@
 package snapdeal_2305;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.projectName.com.BaseTest;
@@ -24,16 +25,17 @@ public class SnapDeal extends BaseTest {
 
 		//Assignment 1 - Go to snapdeal.com
 
-		driver.navigate().to("https://www.snapdeal.com/");
+		DriverManager.getDriver().navigate().to("https://www.snapdeal.com/");
 
 
 
 		// Assignment 2- Find the sign- in locator 
 
-		WebElement signIn = driver.findElement(By.xpath("//span[@class='accountUserName col-xs-12 reset-padding']"));
+		WebElement signIn = DriverManager.getDriver().findElement(By.xpath("//span[@class='accountUserName col-xs-12 reset-padding']"));
 
 		//Assignment 3 -Mouse over on the Sign-in element
 
+		WebDriver driver = null;
 		Actions objActions = new Actions (driver);
 
 		objActions.moveToElement(signIn);
@@ -48,7 +50,7 @@ public class SnapDeal extends BaseTest {
 
 		// Assignment 4- Click on Login
 
-		WebElement loginElement  = driver.findElement(By.xpath("//a[text()='login']"));
+		WebElement loginElement  = DriverManager.getDriver().findElement(By.xpath("//a[text()='login']"));
 		loginElement.click();
 
 		System.out.println("Sign-in clicked");
@@ -56,17 +58,17 @@ public class SnapDeal extends BaseTest {
 		//Assignment 5- Enter mobile number on the login popup\
 
 
-		//WebElement Mobileinputbox = driver.findElement(By.xpath("//*[@id=\"userName\"]"));
+		//WebElement Mobileinputbox = DriverManager.getDriver().findElement(By.xpath("//*[@id=\"userName\"]"));
 
 
-		WebElement frameloginElement = driver.findElement(By.id("loginIframe"));
+		WebElement frameloginElement = DriverManager.getDriver().findElement(By.id("loginIframe"));
 
 
-		driver.switchTo().frame(frameloginElement);
+		DriverManager.getDriver().switchTo().frame(frameloginElement);
 
 		System.out.println("Popup Frame selected to Enter mobilEnter number");
 
-		WebElement Mobileinputbox = driver.findElement(By.xpath("//input[@name='username']"));
+		WebElement Mobileinputbox = DriverManager.getDriver().findElement(By.xpath("//input[@name='username']"));
 
 
 		//Assignment 1 - Go to snapdeal.com
@@ -117,7 +119,7 @@ public class SnapDeal extends BaseTest {
 		//Click Continue
 
 
-		WebElement continueBT = driver.findElement(By.xpath("//*[@id='checkUser']"));
+		WebElement continueBT = DriverManager.getDriver().findElement(By.xpath("//*[@id='checkUser']"));
 
 
 		continueBT.click();

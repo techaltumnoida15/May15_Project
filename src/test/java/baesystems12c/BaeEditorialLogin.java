@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByXPath;
 import org.projectName.com.BaseTest;
 import org.projectName.com.Driver;
+import org.projectName.com.DriverManager;
 import org.testng.annotations.Test;
 
 public class BaeEditorialLogin extends BaseTest{
@@ -11,9 +12,9 @@ public class BaeEditorialLogin extends BaseTest{
 		@Test
 	
 	public void editorialLogin () throws InterruptedException {
-			driver.navigate().to("https://baeedit.dev.dotcom.baesystems.com/cas/login?");
+			DriverManager.getDriver().navigate().to("https://baeedit.dev.dotcom.baesystems.com/cas/login?");
 			
-			System.out.println(driver.getTitle());
+			System.out.println(DriverManager.getDriver().getTitle());
 			
 			Thread.sleep(5000);
 			
@@ -21,8 +22,8 @@ public class BaeEditorialLogin extends BaseTest{
 			
 			String username = "Bharti";
 			
-			//driver.findElement(By.xpath("//div[@class='dijitReset dijitInputField dijitInputContainer']")).sendKeys(username);
-			driver.findElement(By.name("username")).sendKeys(username);
+			//DriverManager.getDriver().findElement(By.xpath("//div[@class='dijitReset dijitInputField dijitInputContainer']")).sendKeys(username);
+			DriverManager.getDriver().findElement(By.name("username")).sendKeys(username);
 			
 			System.out.println("Username entered");
 			
@@ -30,17 +31,17 @@ public class BaeEditorialLogin extends BaseTest{
 			
 			String passwrd = "Bharti";
 			
-			//driver.findElement(By.xpath("//div[@class='dijit dijitReset dijitInline dijitLeft dijitTextBox dijitValidationTextBox UIInput']")).sendKeys(password);
+			//DriverManager.getDriver().findElement(By.xpath("//div[@class='dijit dijitReset dijitInline dijitLeft dijitTextBox dijitValidationTextBox UIInput']")).sendKeys(password);
 			
-			driver.findElement(By.name("password")).sendKeys(passwrd);
+			DriverManager.getDriver().findElement(By.name("password")).sendKeys(passwrd);
 			
 			System.out.println("Password entered");
 			
 			// locate and click on login button
 			
-			driver.findElement(By.id("fw_ui_dijit_Button_0_label")).click();
+			DriverManager.getDriver().findElement(By.id("fw_ui_dijit_Button_0_label")).click();
 			
-			System.out.println(driver.getTitle());
+			System.out.println(DriverManager.getDriver().getTitle());
 			
 			
 		}

@@ -14,7 +14,7 @@ public class BAESearch extends BaseTest {
 
 		/* Mega menu Search icon is clicked */
 	 
-	driver.navigate().to("https://www.baesystems.com/en/home");
+	DriverManager.getDriver().navigate().to("https://www.baesystems.com/en/home");
 
 		DriverManager.getDriver().findElement(By.xpath("//*[@class=\"icon-search top-level-navigation-link desktop-content disable\"]"))
 				.click();

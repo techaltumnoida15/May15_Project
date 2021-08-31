@@ -41,5 +41,6 @@ public class BasePage {   //common methods
 	
 	protected String getPageTitle() {
 		return DriverManager.getDriver().getTitle();
+		
 	}
 }
