@@ -3,6 +3,7 @@ package org.basePage.com;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.project.enums.WaitStrategy;
@@ -47,5 +48,13 @@ public class BasePage {   //common methods
 	
 	protected String getPageTitle() {
 		return DriverManager.getDriver().getTitle();
+	}
+	
+	protected void mouseOver(WebElement element, String elName, WaitStrategy wst) {
+		//Code
+		Actions act = new Actions(DriverManager.getDriver());
+		act.moveToElement(element);
+		act.build().perform();
+		Logger.info("Mouse over done on element '" + elName + "'");
 	}
 }

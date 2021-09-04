@@ -16,6 +16,7 @@
 			<class name="flipkart_may15.FSI" />
 			
 			<class name="org.homePageTest.com.RoundTripSearchTest" />
+			<class name="org.homePageTest.com.BAE_SearchTest" />
 			<class name="aug_08.TC02" />
 		</classes>
 	</test>

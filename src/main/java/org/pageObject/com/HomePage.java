@@ -17,7 +17,7 @@ import com.project.report.Logger;
 
 public class HomePage extends BasePage{
 
-	public HomePage() {}
+	//public HomePage() {}
 
 	private By cssFromCity = By.cssSelector("#from0");
 	private By cssToCity = By.cssSelector("#to0");
