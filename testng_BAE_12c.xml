@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="BAE 12c Suite" parallel="tests" thread-count="2"
+<suite name="BAE 12c Suite" parallel= "tests" thread-count="2"
 	verbose="1">
 
-	<!-- <listeners>
-		//<listener class-name="july17.ListenerClass"></listener>
-	</listeners> -->
+	<listeners>
+		<listener class-name="july17.ListenerClass"></listener>
+	</listeners>
 
 	<test name="BAE 12c Run Chrome">
 
@@ -13,6 +13,7 @@
 		<classes>
 
 			<class name="TrialDesignPattern.BAEhomePageTest" />
+			<!-- <class name="TrialDesignPattern.BAEhomeEditorialLoginTest" /> -->
 
 		</classes>
 	</test> <!-- BAE 12c Run -->

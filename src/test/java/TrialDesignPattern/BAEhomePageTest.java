@@ -15,8 +15,13 @@ public class BAEhomePageTest extends BaseTest {
 		BAEhomePage baehomePage = new BAEhomePage();
 		
 		baehomePage
-		  .waitForHomePageLoad()
-		  .searchTopKeyword("typhoon");
+		.waitForHomePageLoad()
+		.searchTopKeyword("typhoon")
+		.ClickonNewsEvents();
+
+		  
+		  
+		  
 		
 		
 		
