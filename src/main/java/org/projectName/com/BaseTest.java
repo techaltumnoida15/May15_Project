@@ -14,7 +14,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public void quitBrowser() throws Exception {   //interface in TestNG are called as listeners
-		//Driver.quitDriver();
+		Driver.quitDriver();
 	}
 }
   
