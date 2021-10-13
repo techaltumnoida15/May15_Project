@@ -1,0 +1,71 @@
+Create project - Maven Project
+
+Working
+===============================
+If maven is configured
+
+open CMD
+mvn -version
+
+if YES
+Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
+Maven home: G:\Selenium\Maven\apache-maven-3.8.1\bin\..
+Java version: 1.8.0_291, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk1.8.0_291\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+
+else
+mvn is not rec. as int. or ext. command
+
+1. Download Maven
+2. Configure
+
+================================
+Maven commands
+
+1. CMD
+
+2. eclipse
+
+------------------------
+
+1. Create project from cmd
+
+navigate loc where you want to create project
+mvn archetype:generate
+
+Maven will give you a list of projectes
+do nothing
+press enter
+give latest number in default
+
+
+groupID - packageName
+artifactID - ProjectName
+version - press enter
+
+===============================
+All eclipse shortcut
+
+ctrl + shift + l  => to get all shortcut of eclipse
+
+-----------
+
+
+ctrl + a => to select all
+then ctrl + i => to format code indent
+
+=================================
+
+To check settings of Maven
+
+Go to maven foder -> conf -> setting.xml
+
+local repo path, proxy etc
+---------------------------------
+
+
+
+
+
+
