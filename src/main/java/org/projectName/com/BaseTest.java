@@ -1,13 +1,5 @@
 package org.projectName.com;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -26,44 +18,34 @@ public class BaseTest {
 	protected WebDriver driver;
 	//List<String> myList;
 
-	@Parameters({"browserName", "osName"})
+	@Parameters({"browserName"})
 	@BeforeMethod
-	//public void openBrowser(String browserName, String osName) throws Exception {
-		public void openBrowser() throws Exception {
-		String browserName = "Chrome";
+	public void openBrowser(String browserName) throws Exception {
+		
+		if(browserName.equalsIgnoreCase("chrome")) {
+			//Open Chrome
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}
+		else if(browserName.equalsIgnoreCase("firefox")) {
+			//Open FF
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		else if(browserName.equalsIgnoreCase("ie")) {
+			//Open IE
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver();
+		}
 
-		//if(osName.equalsIgnoreCase("mac")) {
-			//Safari
-		//}
-		//else {
-			//Wins
-			if(browserName.equalsIgnoreCase("chrome")) {
-				//Open Chrome
-				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-				//myList = new ArrayList<String>();
-				
-				//ChromeDriver chdr = new ChromeDriver();
-			}
-			else if(browserName.equalsIgnoreCase("firefox")) {
-				//Open FF
-				WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-			}
-			else if(browserName.equalsIgnoreCase("ie")) {
-				//Open IE
-				WebDriverManager.iedriver().setup();
-				driver = new InternetExplorerDriver();
-			}
-			
-			else if(browserName.equalsIgnoreCase("edge")) {
-				//Open Edge
-				WebDriverManager.edgedriver().setup();
-				driver = new EdgeDriver();
-			}
-			else {
-				throw new Exception("This browser is not mention.");
-			}
+		else if(browserName.equalsIgnoreCase("edge")) {
+			//Open Edge
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		else {
+			throw new Exception("This browser is not mention.");
+		}
 		//}
 		driver.manage().window().maximize();
 		System.out.println("window maximized");
@@ -83,12 +65,12 @@ public class BaseTest {
 		 * 
 		 * FileUtils.moveFile(srcScreenshot, new File("C:\\abc\\123.jpg")); }
 		 */
-		
-		
+
+
 		driver.quit();
 	}
 }
-  
+
 
 
 
