@@ -1,0 +1,155 @@
+
+
+Agenda:
+
+Driver/ Driver Manager Manager Class
+wait - implicit, explicit [Fluent] -> Use of Java8
+Framework: 
+
+Set of rule
+Desktop- easy maintenance
+
+Test case - 300 > 
+change, new add
+Util, Data Read
+Code Basic - POM
+Cucumber
+Parallel - Parameters
+Retry
+Report
+
+Code Quality
+
+==========================================================================================================
+
+Data Driven - Locators/Test Data[external source - DataProver, XL, CSV, JSON, Property] + Test[.java]
+
+Next step
+Test[.java] - 
+automaic - methods()
+Design Pattern - 
+driver.findele--------
+POM
+
+XL, Use XL with DataProvoder
+Listeners
+Reporting
+------------------------------
+
+Run - mvn test
+TestNG.XML
+
+
+CICD - Jenkins
+
+---------------------------
+
+240 - TC
+01 TC - 1 mins - 4 Hours
+
+Grid -> on other machine
+
+
+===================================
+Threading
+MultiThreading
+
+Collections
+
+List
+Set
+
+HashMap
+HashTable
+
+-------------------
+Meaning
+What we will choose
+Read Data from property file
+Read Data from excel file
+implement it in tests
+
+======================
+
+Framework Constants
+ENUM
+TestNG Listeners
+Utils
+Common Methods
+
+=================================
+
+1. ToDO
+    * Install MS Office
+    * Test Data - XL
+
+
+2. TestNG Listeners -> contd..
+    * ITestListener
+    * IReTryAnalyzer
+    * ISuteListener
+
+** Below will be discussed after Read Data XL
+    * AnnotationTransformer
+    * IMethodInterceptor
+
+------------------------
+Framework Constants
+ENUM
+------------------------
+
+
+3. Introduction of RemoteWebDriver Class
+4. Introduction DesiredCapabilities Class
+
+Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
+    String browserName = cap.getBrowserName().toLowerCase();
+    System.out.println(browserName);
+    String os = cap.getPlatform().toString();
+    System.out.println(os);
+    String v = cap.getVersion().toString();
+    System.out.println(v);
+
+
+5. HashMap and HashTable
+6. Read Data From XL
+7. Use it in Tests with DataProvider
+
+8. Common Methods / Java 8
+
+9. Extent Report
+
+
+--------------------------------
+
+Scrum
+https://www.youtube.com/watch?v=8dGdIcyDk1w
+https://www.youtube.com/watch?v=SyIN_YMfoQs
+
+System Design:
+https://www.youtube.com/watch?v=aSvOThsVe5w&list=PLTCrU9sGyburBw9wNOHebv9SjlE4Elv5a&index=2
+https://www.youtube.com/watch?v=vge7qwCR1dA&list=PLt4nG7RVVk1g_LutiJ8_LvE914rIE5z4u
+https://www.youtube.com/watch?v=MbjObHmDbZo
+https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
+
+
+Postman:
+https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/
+https://learning.postman.com/docs/writing-scripts/test-scripts/
+https://learning.postman.com/docs/getting-started/introduction/
+https://www.postman.com/use-cases/api-testing/
+
+Maven:
+https://www.youtube.com/playlist?list=PLox9xfUeaKQ7iBCaDw5MQsmPZUa5gRmCp
+
+Jenkins:
+https://www.youtube.com/playlist?list=PLox9xfUeaKQ6lVnKnDRLVsofBHx0FpJcP
+
+
+Selenium:
+https://www.youtube.com/playlist?list=PLox9xfUeaKQ5qVlG-GyYZHLQCWm4ePMPc
+
+Demo API to TEST:
+gorest.co.in
+https://reqres.in
+https://restful-booker.herokuapp.com/apidoc/index.html

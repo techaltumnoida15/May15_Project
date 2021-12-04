@@ -1,12 +1,10 @@
 package org.projectName.com;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.project.enums.Browser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -17,13 +15,14 @@ public final class Driver {
 	private static WebDriver driver;
 
 	public static void initDriver() throws Exception {
-		String browserName = "CHROME";
+		String browserName = "chrome";
 		String osName = "WINS";
 
 		if(DriverManager.getDriver() == null) {
 
 			//Wins
-			if(browserName.equalsIgnoreCase("chrome")) {
+			//if(browserName.equalsIgnoreCase("chrome")) {
+			if(browserName.equalsIgnoreCase(Browser.CHROME.name())) {
 				//Open Chrome
 				WebDriverManager.chromedriver().setup();
 
@@ -51,6 +50,7 @@ public final class Driver {
 		DriverManager.setWebDriver(driver);
 		//DriverManager.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().get("http://dev.dotcom.baesystems.com/en/home");
 		
 	}
 

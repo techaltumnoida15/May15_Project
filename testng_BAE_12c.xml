@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="BAE 12c Suite" parallel="classes" thread-count="2" verbose="1">
 
-<listeners>
-<listener class-name="july17.ListenerClass"></listener>
-</listeners> 
-  
-  <test name="BAE 12c Run Chrome">
-  
-     <parameter name ="browserName" value="Chrome"></parameter>
-  
-    <classes>
+<suite name="BAE 12c Suite" parallel= "tests" thread-count="2"
+	verbose="1">
 
-      <class name="baesystems12c.BAESearch_12c"/>
-      <class name="baesystems12c.BurgerMenuTest_12c"/>
-      <class name="baesystems12c.RFSearchTest_12c"/>
-      <class name="baesystems12c.MegaMenuTest_12c"/>
-    </classes>
-  </test> <!-- BAE 12c Run -->
-  
- <!--  <test name="BAE 12c Run Edge">
-     <parameter name ="browserName" value="edge"></parameter>
-  
-    <classes>
+	<listeners>
+		<listener class-name="july17.ListenerClass"></listener>
+	</listeners>
 
-      <class name="baesystems12c.BAESearch_12c"/>
-      <class name="baesystems12c.BurgerMenuTest_12c"/>
-      <class name="baesystems12c.RFSearchTest_12c"/>
-      <class name="baesystems12c.MegaMenuTest_12c"/>
-    </classes>
-  </test> -->
+	<test name="BAE 12c Run Chrome">
+
+
+		<classes>
+
+			<class name="TrialDesignPattern.BAEhomePageTest" />
+			<!-- <class name="TrialDesignPattern.BAEhomeEditorialLoginTest" /> -->
+
+		</classes>
+	</test> <!-- BAE 12c Run -->
+
+
+
 </suite> <!-- Test Suite -->

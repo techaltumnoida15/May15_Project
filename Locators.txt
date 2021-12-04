@@ -25,6 +25,9 @@ Relative xpath
 
 //a[@class='second-level-navigation-link'][5]
 
+//use[@class='sv-icon']
+
+
 
 ** If there are more then 1 elements of same xpath and you 
 want to navigate to other elements
