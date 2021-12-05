@@ -10,13 +10,13 @@
 
 	<test name="Grouped Tests">
 		<classes>
-			<class name="may23.HandleAjaxListTest" />
+			<!-- <class name="may23.HandleAjaxListTest" />
 			<class name="flipkart_may15.SearchItems_List" />
 			<class name="flipkart_may15.LoginTest" />
 			<class name="flipkart_may15.FSI" />
 			
-			<class name="org.homePageTest.com.RoundTripSearchTest" />
-			<class name="aug_08.TC02" />
+			<class name="org.homePageTest.com.RoundTripSearchTest" /> -->
+			<class name="org.projectName.com.CucumberTestRunner" />
 		</classes>
 	</test>
 

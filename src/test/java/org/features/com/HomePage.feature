@@ -1,7 +1,7 @@
 Feature: Homepage Scenarios
 
 
-#Common steps in scenarios
+#Common steps in all scenarios
 Background:
  Given User is on homepage
 
@@ -11,9 +11,10 @@ Background:
   #Then User enter from
   #And User enter to
   #And select depart date
-  #Then Click on Search
+ 	#Then Click on Search
   #And Listing page should open
   
+  @Sanity
   #Can I pass data in test from a feature file?
   #Scenario: Initiate Search - RoundTrip
   #Then User select roundTrip
@@ -24,7 +25,7 @@ Background:
   #And Listing page should open	
   
   
-  @Smoke
+ @Regression @Smoke @Sanity
   Scenario Outline: Initiate Search - RoundTrip with different set of data
     Then User select roundTrip
     Then User enter from "<FROM>"
@@ -37,5 +38,5 @@ Background:
     Examples: 
       | FROM | TO  | DepartDate | ReturnDate |
       | DEL  | NYC |         10 |         15 |
-      | LAS  | LAX |         18 |         25 |
-      | MNL  | LON |         12 |         17 |
+      #| LAS  | LAX |         18 |         25 |
+     # | MNL  | LON |         12 |         17 |
