@@ -4,7 +4,7 @@
 
 	<listeners>
 		<listener class-name="org.project.listeners.ListenerClass"></listener>
-		<listener class-name="july17.MethodInterceptor"></listener>
+		<!-- <listener class-name="july17.MethodInterceptor"></listener> -->
 	</listeners>
 
 

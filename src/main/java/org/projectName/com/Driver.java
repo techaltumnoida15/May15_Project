@@ -15,7 +15,7 @@ public final class Driver {
 	private static WebDriver driver;
 
 	public static void initDriver() throws Exception {
-		String browserName = "chrome";
+		String browserName = "firefox";
 		String osName = "WINS";
 
 		if(DriverManager.getDriver() == null) {

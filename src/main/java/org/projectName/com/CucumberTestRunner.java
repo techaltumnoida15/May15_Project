@@ -16,7 +16,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		features = "src/test/java/org/features/com",      //path of fearure file
 		glue = {"org.stepDefnition"},                                               //path of stepDefn
-		tags = "",
+		tags = "@Smoke",
 		plugin = {"json:target/cucmber.json"},
 		//dryRun = true
 		monochrome = true
@@ -55,6 +55,6 @@ public class CucumberTestRunner {
 
 	@AfterMethod
 	public void quitBrowser() throws Exception {   //interface in TestNG are called as listeners
-		//Driver.quitDriver();
+		Driver.quitDriver();
 	}
 }
